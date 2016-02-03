@@ -11,6 +11,8 @@ textarea { overflow: auto; }
 
 input, button { margin: 0; padding: 0; border: 0; }
 
+input[type="submit"], button { cursor: pointer; }
+
 div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
 
 ul, ol { list-style-type: none; }
@@ -30,6 +32,10 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .icon-skrill:before { content: ""; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+
+.out { background: url(../img/bg.jpg) repeat-y; }
+
+.wrapper { max-width: 1600px; height: 7892px; background-color: white; -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); margin: auto; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
