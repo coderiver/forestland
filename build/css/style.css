@@ -83,8 +83,8 @@ a { text-decoration: none; }
 .header__nav a .nav__left, .header__nav a .nav__right { position: absolute; top: 50%; margin-top: -1.44444em; height: 2.88889em; background: url(../img/nav__left.png) no-repeat; left: -2.44444em; margin-left: 1.33333em; width: 2.44444em; display: none; z-index: -1; }
 .header__nav a .nav__right { left: auto; right: -2.44444em; margin-right: 1.22222em; background: url(../img/nav__right.png) no-repeat; }
 
-.header__logo_big { position: absolute; width: 252px; height: 252px; background-color: #93c01f; left: 3px; top: -23px; -webkit-border-radius: 50%; border-radius: 50%; z-index: 100; }
-.header__logo_big .logo { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 132px; }
+.header__logo_big { position: absolute; width: 252px; height: 252px; background-color: #93c01f; left: 3px; top: -57px; -webkit-border-radius: 50%; border-radius: 50%; z-index: 100; text-align: center; }
+.header__logo_big .logo { font-size: 132px; margin-top: 67px; }
 
 .logo { font-size: 73px; color: white; display: inline-block; }
 
