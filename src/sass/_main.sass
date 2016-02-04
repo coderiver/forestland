@@ -9,7 +9,7 @@
 	box-shadow: 0 0 24px rgba(0, 0, 0, 0.24)
 	margin: auto
 .header
-	height: 100px
+	min-height: 100px
 	background-color: $green
 	position: relative
 	.header__tel
@@ -23,7 +23,8 @@
 		right: 27px
 	.header__logo
 		position: absolute
-		top: 9px
+		top: 50%
+		transform: translateY(-50%)
 		left: 35px
 .header__nav
 	font-size: 0
@@ -88,6 +89,12 @@
 	.logo
 		font-size: 132px
 		margin-top: 67px
+		position: absolute
+		left: 0
+		right: 0
+		margin: 33px auto 0
+		top: 50%
+		transform: translateY(-50%)
 .logo
 	font-size: 73px
 	color: white
