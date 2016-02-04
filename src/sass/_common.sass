@@ -31,6 +31,62 @@
 body
 	font-family: Arial, sans-serif
 	font-size: 12px
-	line-height: 1.4
-	
+	line-height: 1.2
+a
+	text-decoration: none
 // common blocks
+
+//fonts
++font( "Cultbold Bold", "cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont")
+=cult
+	font-family: "Cultbold Bold", sans-serif
+//vars
+$green: #93c01f
+$blue: #039edf
+$footer: #4a4a4a
+$contact: #efefef
+$magenta: #a11b5d
+$red: #EC0019
+
+//icons
+.icon-talking
+	+s(icon-talking)
+
+
+//buttons
+%btn
+	font-family: "Open Sans", sans-serif
+	font-size: 18px
+	font-weight: 600
+	text-transform: uppercase
+	display: inline-block
+	height: 62px
+	background-color: #f5d400
+	border-radius: 7px
+	position: relative
+	cursor: pointer
+	color: #fff
+	text-align: center
+	&:active
+		top: 1px
+.btn
+	@extend %btn
+
+.btn-callback
+	@extend %btn
+	width: 285px
+	height: 66px
+	background-color: $magenta
+	border: 2px solid #93c01f
+	border-radius: 10px
+	+tr(all .3s)
+	&:hover
+		background-color: $red
+	&:active
+		background-color: darken($red, 4%)
+	i
+		margin-right: 10px
+	span
+		padding-right: 19px
+	i, span 
+		vertical-align: middle

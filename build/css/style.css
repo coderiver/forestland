@@ -27,15 +27,64 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
 
-.icon-sepa:before { content: ""; }
+.icon-architecture:before { content: ""; }
 
-.icon-skrill:before { content: ""; }
+.icon-car:before { content: ""; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+.icon-education:before { content: ""; }
+
+.icon-layout:before { content: ""; }
+
+.icon-location:before { content: ""; }
+
+.icon-logo:before { content: ""; }
+
+.icon-maxart:before { content: ""; }
+
+.icon-pan:before { content: ""; }
+
+.icon-quality:before { content: ""; }
+
+.icon-service:before { content: ""; }
+
+.icon-shoping:before { content: ""; }
+
+body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.2; }
+
+a { text-decoration: none; }
+
+@font-face { font-family: "Cultbold Bold"; src: url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.eot"); src: url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.woff2") format("woff2"), url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.woff") format("woff"), url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.icon-talking { background-image: url("../img/icons.png"); width: 28px; height: 28px; background-position: 0px 0px; }
+
+.btn, .btn-callback { font-family: "Open Sans", sans-serif; font-size: 18px; font-weight: 600; text-transform: uppercase; display: inline-block; height: 62px; background-color: #f5d400; -webkit-border-radius: 7px; border-radius: 7px; position: relative; cursor: pointer; color: #fff; text-align: center; }
+.btn:active, .btn-callback:active { top: 1px; }
+
+.btn-callback { width: 285px; height: 66px; background-color: #a11b5d; border: 2px solid #93c01f; -webkit-border-radius: 10px; border-radius: 10px; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn-callback:hover { background-color: #EC0019; }
+.btn-callback:active { background-color: #d80017; }
+.btn-callback i { margin-right: 10px; }
+.btn-callback span { padding-right: 19px; }
+.btn-callback i, .btn-callback span { vertical-align: middle; }
 
 .out { background: url(../img/bg.jpg) repeat; padding: 0 20px; }
 
 .wrapper { max-width: 1600px; height: 7892px; background-color: white; -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); margin: auto; }
+
+.header { height: 100px; background-color: #93c01f; position: relative; }
+.header .header__tel { position: absolute; top: 16px; right: 42px; }
+.header .header__nav { font-size: 0; display: inline-block; padding: 28px 0; overflow: hidden; margin: 0 356px 0 240px; }
+.header .header__nav li { display: inline-block; padding: 0 12px; }
+.header .header__nav a { color: black; font-family: "Open Sans", sans-serif; font-size: 18px; font-weight: 600; text-transform: uppercase; display: inline-block; position: relative; z-index: 5; line-height: 2.38889em; height: 2.38889em; }
+.header .header__nav a:before { content: " "; display: block; height: 100%; position: absolute; z-index: -1; background-color: #ffdd00; left: 1.22222em; right: 1.22222em; display: none; }
+.header .header__nav a:hover .nav__left, .header .header__nav a:hover .nav__right, .header .header__nav a:hover:before { display: block; }
+.header .header__nav a .nav__left, .header .header__nav a .nav__right { position: absolute; top: 50%; margin-top: -1.44444em; height: 2.88889em; background: url(../img/nav__left.png) no-repeat; left: -2.44444em; margin-left: 1.22222em; width: 2.44444em; display: none; z-index: -1; }
+.header .header__nav a .nav__right { left: auto; right: -2.44444em; margin-right: 1.22222em; background: url(../img/nav__right.png) no-repeat; }
+.header .btn-callback { position: absolute; z-index: 100; top: 69px; right: 27px; }
+.header .header__logo { position: absolute; top: 9px; left: 35px; }
+
+.logo { font-size: 73px; color: white; display: inline-block; }
+
+.tel { color: white; font-family: "Open Sans", sans-serif; font-size: 36px; font-weight: 600; text-transform: uppercase; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
