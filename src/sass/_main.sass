@@ -8,10 +8,19 @@
 	background-color: white
 	box-shadow: 0 0 24px rgba(0, 0, 0, 0.24)
 	margin: auto
+	padding-top: 100px
+	+r(1656)
+		padding-top: 142px
 .header
 	min-height: 100px
 	background-color: $green
-	position: relative
+	position: fixed
+	top: 0
+	left: 20px
+	right: 20px
+	margin: auto
+	max-width: 1600px
+	z-index: 999
 	.header__tel
 		position: absolute
 		top: 16px
@@ -105,3 +114,19 @@
 	font-size: 36px
 	font-weight: 600
 	text-transform: uppercase
+.top
+	height: calc(100vh - 100px) // Предусм. лучший вариант
+	background: url(../img/town.jpg) no-repeat center
+	padding-top: 31px
+	position: relative
+	text-align: center
+	.top__title
+		background: url(../img/top-title.png) no-repeat center
+		height: 179px
+		line-height: 179px
+		max-width: 1235px
+		+cult
+		font-size: 70.21px
+		color: #f5d400
+	.btn-more
+		display: inline-block

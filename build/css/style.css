@@ -56,8 +56,8 @@ a { text-decoration: none; }
 @font-face { font-family: "Cultbold Bold"; src: url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.eot"); src: url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.woff2") format("woff2"), url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.woff") format("woff"), url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 .icon-talking { background-image: url("../img/icons.png"); width: 28px; height: 28px; background-position: 0px 0px; }
 
-.btn, .btn-callback { font-family: "Open Sans", sans-serif; font-size: 18px; font-weight: 600; text-transform: uppercase; display: inline-block; height: 62px; background-color: #f5d400; -webkit-border-radius: 7px; border-radius: 7px; position: relative; cursor: pointer; color: #fff; text-align: center; }
-.btn:active, .btn-callback:active { top: 1px; }
+.btn, .btn-callback, .btn-more { font-family: "Open Sans", sans-serif; font-size: 18px; font-weight: 600; text-transform: uppercase; display: inline-block; height: 62px; background-color: #f5d400; -webkit-border-radius: 7px; border-radius: 7px; position: relative; cursor: pointer; color: #fff; text-align: center; }
+.btn:active, .btn-callback:active, .btn-more:active { top: 1px; }
 
 .btn-callback { width: 285px; height: 66px; background-color: #a11b5d; border: 2px solid #93c01f; -webkit-border-radius: 10px; border-radius: 10px; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .btn-callback:hover { background-color: #EC0019; }
@@ -66,11 +66,13 @@ a { text-decoration: none; }
 .btn-callback span { padding-right: 19px; }
 .btn-callback i, .btn-callback span { vertical-align: middle; }
 
+.btn-more { width: 281px; color: #010101; }
+
 .out { background: url(../img/bg.jpg) repeat; padding: 0 20px; }
 
-.wrapper { max-width: 1600px; height: 7892px; background-color: white; -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); margin: auto; }
+.wrapper { max-width: 1600px; height: 7892px; background-color: white; -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); margin: auto; padding-top: 100px; }
 
-.header { min-height: 100px; background-color: #93c01f; position: relative; }
+.header { min-height: 100px; background-color: #93c01f; position: fixed; top: 0; left: 20px; right: 20px; margin: auto; max-width: 1600px; z-index: 999; }
 .header .header__tel { position: absolute; top: 16px; right: 42px; }
 .header .btn-callback { position: absolute; z-index: 100; top: 69px; right: 27px; }
 .header .header__logo { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); left: 35px; }
@@ -90,8 +92,13 @@ a { text-decoration: none; }
 
 .tel { color: white; font-family: "Open Sans", sans-serif; font-size: 36px; font-weight: 600; text-transform: uppercase; }
 
+.top { height: -webkit-calc(100vh - 100px); height: calc(100vh - 100px); background: url(../img/town.jpg) no-repeat center; padding-top: 31px; position: relative; text-align: center; }
+.top .top__title { background: url(../img/top-title.png) no-repeat center; height: 179px; line-height: 179px; max-width: 1235px; font-family: "Cultbold Bold", sans-serif; font-size: 70.21px; color: #f5d400; }
+.top .btn-more { display: inline-block; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
+@media only screen and (max-width: 1656px){
+ .wrapper{ padding-top: 142px; } }
 
 
 
