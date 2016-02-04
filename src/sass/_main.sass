@@ -16,55 +16,6 @@
 		position: absolute
 		top: 16px
 		right: 42px
-	.header__nav
-		font-size: 0
-		display: inline-block
-		padding: 28px 0
-		overflow: hidden
-		margin: 0 356px 0 240px
-		li
-			display: inline-block
-			padding: 0 12px
-		a
-			color: black
-			font-family: "Open Sans", sans-serif
-			font-size: 18px
-			font-weight: 600
-			text-transform: uppercase
-			display: inline-block
-			position: relative
-			z-index: 5
-			line-height: 2.388888888888889em //43px / 18px
-			height: 2.388888888888889em //43px / 18px
-			&:before
-				content: ' '
-				display: block
-				height: 100%
-				position: absolute
-				z-index: -1
-				background-color: #ffdd00
-				left: 1.2222222222222223em// 22px / 18px
-				right: 1.2222222222222223em// 22px / 18px
-				display: none
-			&:hover
-				.nav__left, .nav__right, &:before
-					display: block
-			.nav__left, .nav__right
-				position: absolute
-				top: 50%
-				margin-top: -1.4444444444444444em // 26px / 18px
-				height: 2.888888888888889em // 52px / 18px
-				background: url(../img/nav__left.png) no-repeat 
-				left: -2.4444444444444446em // 44px / 18px
-				margin-left: 1.2222222222222223em// 22px / 18px
-				width: 2.4444444444444446em // 44px / 18px
-				display: none
-				z-index: -1
-			.nav__right
-				left: auto
-				right: -2.4444444444444446em // 44px / 18px
-				margin-right: 1.2222222222222223em // 22px / 18px
-				background: url(../img/nav__right.png) no-repeat
 	.btn-callback
 		position: absolute
 		z-index: 100
@@ -74,6 +25,71 @@
 		position: absolute
 		top: 9px
 		left: 35px
+.header__nav
+	font-size: 0
+	display: inline-block
+	padding: 28px 0
+	overflow: hidden
+	margin: 0 350px 0 246px
+	li
+		display: inline-block
+		padding: 0 12px
+	a
+		color: black
+		font-family: "Open Sans", sans-serif
+		font-size: 18px
+		font-weight: 600
+		text-transform: uppercase
+		display: inline-block
+		position: relative
+		z-index: 5
+		line-height: 2.388888888888889em //43px / 18px
+		height: 2.388888888888889em //43px / 18px
+		&:before
+			content: ' '
+			display: block
+			height: 100%
+			position: absolute
+			z-index: -1
+			background-color: #ffdd00
+			left: 1.2222222222222223em// 22px / 18px
+			right: 1.2222222222222223em// 22px / 18px
+			display: none
+		&:hover
+			.nav__left, .nav__right, &:before
+				display: block
+				background-size: contain
+		.nav__left, .nav__right
+			position: absolute
+			top: 50%
+			margin-top: -1.4444444444444444em // 26px / 18px
+			height: 2.888888888888889em // 52px / 18px
+			background: url(../img/nav__left.png) no-repeat 
+			left: -2.4444444444444446em // 44px / 18px
+			margin-left: 1.3333333333333333em// 24px / 18px
+			width: 2.4444444444444446em // 44px / 18px
+			display: none
+			z-index: -1
+		.nav__right
+			left: auto
+			right: -2.4444444444444446em // 44px / 18px
+			margin-right: 1.2222222222222223em // 22px / 18px
+			background: url(../img/nav__right.png) no-repeat
+.header__logo_big
+	position: absolute
+	width: 252px
+	height: 252px
+	background-color: $green
+	left: 3px
+	top: -23px
+	border-radius: 50%
+	z-index: 100
+	.logo
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		font-size: 132px
 .logo
 	font-size: 73px
 	color: white
