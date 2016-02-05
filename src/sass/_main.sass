@@ -142,3 +142,52 @@
 		left: 0
 		right: 0
 		margin: auto
+.footer
+	background-color: #4a4a4a
+	font-size: 0
+	.footer__in
+		padding: 46px 0 80px
+		max-width: 800px
+		margin: auto
+	.footer__col
+		width: 33.3%
+		display: inline-block
+		vertical-align: top
+		&.footer__col_centr
+			text-align: center
+		&.footer__col_right
+			text-align: right
+	.footer__title
+		+cult
+		font-size: 48px
+		color: #fff
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 50px
+	.footer__list
+		text-align: left
+		display: inline-block
+		li
+			min-height: 42px
+			position: relative
+			&:not(:last-child)
+				margin-bottom: 27px
+			[type="file"]
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				display: block
+				opacity: 0
+				cursor: pointer
+		a
+			text-decoration: underline
+			font: 400 18px "Open Sans", sans-serif
+			color: #fff
+			padding: 0 0 0 55px
+			background: url(../img/jpg.png) no-repeat left
+			position: relative
+			display: inline-block
+			&:hover
+				text-decoration: none
