@@ -34,6 +34,9 @@ body
 	line-height: 1.2
 a
 	text-decoration: none
+img
+	max-width: 100%
+	height: auto
 // common blocks
 
 //fonts
@@ -47,6 +50,7 @@ $footer: #4a4a4a
 $contact: #efefef
 $magenta: #a11b5d
 $red: #EC0019
+$yellow: #f5d400
 
 //icons
 .icon-talking
@@ -61,14 +65,12 @@ $red: #EC0019
 	text-transform: uppercase
 	display: inline-block
 	height: 62px
-	background-color: #f5d400
+	background-color: $yellow
 	border-radius: 7px
 	position: relative
 	cursor: pointer
 	color: #fff
 	text-align: center
-	&:active
-		top: 1px
 .btn
 	@extend %btn
 
@@ -94,3 +96,6 @@ $red: #EC0019
 	@extend %btn
 	width: 281px
 	color: #010101
+	+tr(all .3s)
+	&:active
+		background-color: darken($yellow, 4%)

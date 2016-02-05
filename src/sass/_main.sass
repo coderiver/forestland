@@ -9,10 +9,11 @@
 	box-shadow: 0 0 24px rgba(0, 0, 0, 0.24)
 	margin: auto
 	padding-top: 100px
-	+r(1656)
-		padding-top: 142px
+	// +r(1656)
+	// 	padding-top: 142px
 .header
-	min-height: 100px
+	height: 100px
+	line-height: 100px
 	background-color: $green
 	position: fixed
 	top: 0
@@ -28,7 +29,8 @@
 	.btn-callback
 		position: absolute
 		z-index: 100
-		top: 69px
+		top: 100%
+		transform: translateY(-50%)
 		right: 27px
 	.header__logo
 		position: absolute
@@ -38,9 +40,10 @@
 .header__nav
 	font-size: 0
 	display: inline-block
-	padding: 28px 0
 	overflow: hidden
 	margin: 0 350px 0 246px
+	+r(1660)
+		margin: 0 320px 0 250px
 	li
 		display: inline-block
 		padding: 0 12px
@@ -55,6 +58,8 @@
 		z-index: 5
 		line-height: 2.388888888888889em //43px / 18px
 		height: 2.388888888888889em //43px / 18px
+		+r(1660)
+			font-size: 12px
 		&:before
 			content: ' '
 			display: block
@@ -114,19 +119,26 @@
 	font-size: 36px
 	font-weight: 600
 	text-transform: uppercase
+	line-height: 1.2
 .top
 	height: calc(100vh - 100px) // Предусм. лучший вариант
 	background: url(../img/town.jpg) no-repeat center
 	padding-top: 31px
 	position: relative
 	text-align: center
+	.top__in
+		padding: 0 30px
 	.top__title
-		background: url(../img/top-title.png) no-repeat center
-		height: 179px
-		line-height: 179px
-		max-width: 1235px
-		+cult
-		font-size: 70.21px
-		color: #f5d400
+		left: 0
+		right: 0
+		margin: auto
+		top: 33px
+		+hide-text
+		
 	.btn-more
 		display: inline-block
+		position: absolute
+		bottom: 98px
+		left: 0
+		right: 0
+		margin: auto
