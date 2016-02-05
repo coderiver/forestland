@@ -27,27 +27,11 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
 
-.icon-architecture:before { content: ""; }
-
-.icon-car:before { content: ""; }
-
-.icon-education:before { content: ""; }
-
-.icon-layout:before { content: ""; }
-
-.icon-location:before { content: ""; }
-
 .icon-logo:before { content: ""; }
 
 .icon-maxart:before { content: ""; }
 
 .icon-pan:before { content: ""; }
-
-.icon-quality:before { content: ""; }
-
-.icon-service:before { content: ""; }
-
-.icon-shoping:before { content: ""; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.2; }
 
@@ -56,7 +40,23 @@ a { text-decoration: none; }
 img { max-width: 100%; height: auto; }
 
 @font-face { font-family: "Cultbold Bold"; src: url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.eot"); src: url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.woff2") format("woff2"), url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.woff") format("woff"), url("fonts/cyrillic_font_moloko_by_wakabaru-d4n3szc-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-.icon-talking { background-image: url("../img/icons.png"); width: 28px; height: 28px; background-position: 0px 0px; }
+.icon-talking { background-image: url("../img/icons.png"); width: 28px; height: 28px; background-position: -570px -204px; }
+
+.icon-car { background-image: url("../img/icons.png"); width: 184px; height: 115px; background-position: -226px -203px; }
+
+.icon-tree { background-image: url("../img/icons.png"); width: 159px; height: 190px; background-position: 0px -349px; }
+
+.icon-house { background-image: url("../img/icons.png"); width: 140px; height: 200px; background-position: -570px 0px; }
+
+.icon-abc { background-image: url("../img/icons.png"); width: 191px; height: 178px; background-position: -375px 0px; }
+
+.icon-robot { background-image: url("../img/icons.png"); width: 183px; height: 191px; background-position: -188px 0px; }
+
+.icon-tractor { background-image: url("../img/icons.png"); width: 222px; height: 142px; background-position: 0px -203px; }
+
+.icon-puzzle { background-image: url("../img/icons.png"); width: 184px; height: 199px; background-position: 0px 0px; }
+
+.icon-other { background-image: url("../img/icons.png"); width: 191px; height: 153px; background-position: -163px -349px; }
 
 .btn, .btn-callback, .btn-more { font-family: "Open Sans", sans-serif; font-size: 18px; font-weight: 600; text-transform: uppercase; display: inline-block; height: 62px; background-color: #f5d400; -webkit-border-radius: 7px; border-radius: 7px; position: relative; cursor: pointer; color: #fff; text-align: center; }
 
@@ -98,6 +98,16 @@ img { max-width: 100%; height: auto; }
 .top .top__in { padding: 0 30px; }
 .top .top__title { left: 0; right: 0; margin: auto; top: 33px; font: 0/0 a; text-shadow: none; color: transparent; }
 .top .btn-more { display: inline-block; position: absolute; bottom: 98px; left: 0; right: 0; margin: auto; }
+
+.odds { position: relative; color: #000; text-align: center; font-size: 0; }
+.odds .odds__in { padding: 50px 0 20px; }
+.odds .odds__title { font-size: 48px; text-transform: uppercase; margin-bottom: 35px; font-family: "Cultbold Bold", sans-serif; color: #a11b5d; }
+.odds .odds__item { display: inline-block; width: 33.333%; vertical-align: top; padding: 0 20px; margin-bottom: 5px; }
+.odds .odds__pic { height: 200px; margin-bottom: 39px; text-align: center; font-size: 0; }
+.odds .odds__pic:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.odds .odds__pic i { vertical-align: middle; }
+.odds .odds__name { font-family: "Cultbold Bold", sans-serif; font-size: 30px; color: #3e3e3e; margin-bottom: 20px; }
+.odds .odds__text { font: 600 18px "Open Sans", sans-serif; max-width: 430px; margin: auto; }
 
 .footer { background-color: #4a4a4a; font-size: 0; }
 .footer .footer__in { padding: 46px 0 80px; max-width: 800px; margin: auto; }
