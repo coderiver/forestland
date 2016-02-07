@@ -51,6 +51,7 @@ $contact: #efefef
 $magenta: #a11b5d
 $red: #EC0019
 $yellow: #f5d400
+$black: #3e3e3e
 
 //icons
 .icon-talking
@@ -114,3 +115,21 @@ $yellow: #f5d400
 	+tr(all .3s)
 	&:active
 		background-color: darken($yellow, 4%)
+
+//title
+.title
+	+cult
+	text-transform: uppercase
+	font-size: 48px
+	color: #fff
+	text-align: center
+	&.title_black
+		color: #3e3e3e
+	&.title_magenta
+		color: $magenta
+	&.title_yellow
+		color: #ffdd00
+	&.title_yellow-next
+		color: #f9d800
+	&.title_orange
+		color: #f7921e
