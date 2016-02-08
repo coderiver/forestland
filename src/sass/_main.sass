@@ -121,7 +121,7 @@
 	line-height: 1.2
 .top
 	height: calc(100vh - 100px) 
-	min-height: 700px
+	min-height: 500px
 	background: url(../img/town.jpg) no-repeat center
 	padding-top: 31px
 	position: relative
@@ -225,6 +225,8 @@
 		color: $black
 		font: 400 18px/24px "Open Sans", sans-serif
 		text-align: left
+		+r(600)
+			font-size: 16px
 	.about__link
 		margin-top: 27px
 .about__link
@@ -258,7 +260,75 @@
 			background: url(../img/about__right.png) no-repeat left
 			left: auto
 			right: -39px
-
+.transfer
+	position: relative
+	min-height: 455px
+	background-color: $blue
+	text-align: center
+	.transfer__in 
+		padding: 96px 20px 92px
+		max-width: 1120px
+		margin: auto
+	.title
+		margin-bottom: 32px
+		+clr
+		i
+			float: right
+			margin: -44px 0 0 20px
+	.transfer__container
+		font-size: 0
+		clear: both
+	[class^="col"]
+		display: inline-block
+		vertical-align: top
+		width: 50%
+		padding: 0 20px
+		margin-bottom: 28px
+		text-align: left
+	p
+		font: 600 18px "Open Sans", sans-serif
+		color: #fff
+.transfer__link
+	color: #039edf
+	font: 600 1.5em "Open Sans", sans-serif
+	text-transform: uppercase
+	display: inline-block
+	height: 2em // 36px / 18px
+	line-height: 2em // 36px / 18px
+	position: relative
+	z-index: 1
+	&:hover
+		.transfer__bg
+			background-color: #f7921e
+			&:before
+				background: url(../img/transfer__left-h.png) no-repeat
+				background-size: contain
+			&:after
+				background: url(../img/transfer__right-h.png) no-repeat
+				background-size: contain
+	.transfer__bg
+		position: absolute
+		display: block
+		z-index: -1
+		width: 100%
+		height: 100%
+		background-color: #f9d800
+		top: 0
+		&:before, &:after
+			content: ' '
+			display: block
+			width: 4.777777777777778em //86px / 18px
+			height: 2.388888888888889em // 43px / 18px
+			position: absolute
+			right: 99%
+			top: -0.16666666666666666em // -3px / 18px
+			background: url(../img/transfer__left.png) no-repeat
+			background-size: contain
+		&:after
+			left: 100%
+			right: auto
+			background: url(../img/transfer__right.png) no-repeat
+			background-size: contain
 .footer
 	background-color: #4a4a4a
 	font-size: 0
