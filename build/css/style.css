@@ -134,11 +134,10 @@ img { max-width: 100%; height: auto; }
 .about__link .about__bg:before, .about__link .about__bg:after { content: " "; display: inline-block; position: absolute; background: url(../img/about__left.png) no-repeat left; height: 43px; width: 86px; background-size: contain; left: -39px; top: -3px; }
 .about__link .about__bg:after { background: url(../img/about__right.png) no-repeat left; left: auto; right: -39px; }
 
-.transfer { position: relative; min-height: 455px; background-color: #039edf; text-align: center; }
+.transfer { position: relative; background-color: #039edf; text-align: center; }
 .transfer .transfer__in { padding: 96px 20px 92px; max-width: 1120px; margin: auto; }
-.transfer .title { margin-bottom: 32px; *zoom: 1; }
-.transfer .title:after { content: " "; display: table; clear: both; }
-.transfer .title i { float: right; margin: -44px 0 0 20px; }
+.transfer .title { margin-bottom: 32px; position: relative; }
+.transfer .title i { position: absolute; right: 0; top: -44px; }
 .transfer .transfer__container { font-size: 0; clear: both; }
 .transfer [class^="col"] { display: inline-block; vertical-align: top; width: 50%; padding: 0 20px; margin-bottom: 28px; text-align: left; }
 .transfer p { font: 600 18px "Open Sans", sans-serif; color: #fff; }
@@ -171,11 +170,17 @@ img { max-width: 100%; height: auto; }
 @media only screen and (max-width: 1024px){
  .title{ font-size: 40px; }
  .odds .odds__item{ width: 50%; }
- .odds .odds__name{ font-size: 26px; } }
+ .odds .odds__name{ font-size: 26px; }
+ .transfer .transfer__container{ margin: 0 -20px; } }
+@media only screen and (max-width: 960px){
+ .transfer .transfer__in{ padding: 60px 20px 60px; }
+ .transfer .title i{ display: none; } }
 @media only screen and (max-width: 768px){
  .title{ font-size: 36px; }
  .footer .footer__col{ width: 50%; margin-bottom: 30px; }
  .footer .footer__col.footer__col_right{ text-align: left; } }
+@media only screen and (max-width: 680px){
+ .transfer [class^="col"]{ width: 100%; } }
 @media only screen and (max-width: 640px){
  .about .col1{ float: none; width: 100%; margin-bottom: 15px; text-align: center; } }
 @media only screen and (max-width: 600px){
@@ -185,7 +190,9 @@ img { max-width: 100%; height: auto; }
  .odds .odds__pic{ height: auto; margin-bottom: 20px; }
  .odds .odds__name{ font-size: 22px; margin-bottom: 10px; }
  .odds .odds__text{ font-size: 16px; }
- .about p{ font-size: 16px; } }
+ .about p{ font-size: 16px; }
+ .transfer .transfer__in{ padding: 40px 20px 40px; }
+ .transfer p{ font-size: 16px; } }
 @media only screen and (max-width: 560px){
  .footer .footer__col{ width: 100%; }
  .footer .footer__col.footer__col_centr{ text-align: left; } }

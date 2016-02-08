@@ -262,22 +262,30 @@
 			right: -39px
 .transfer
 	position: relative
-	min-height: 455px
 	background-color: $blue
 	text-align: center
 	.transfer__in 
 		padding: 96px 20px 92px
 		max-width: 1120px
 		margin: auto
+		+r(960)
+			padding: 60px 20px 60px
+		+r(600)
+			padding: 40px 20px 40px
 	.title
 		margin-bottom: 32px
-		+clr
+		position: relative
 		i
-			float: right
-			margin: -44px 0 0 20px
+			position: absolute
+			right: 0
+			top: -44px
+			+r(960)
+				display: none
 	.transfer__container
 		font-size: 0
 		clear: both
+		+r(1024)
+			margin: 0 -20px
 	[class^="col"]
 		display: inline-block
 		vertical-align: top
@@ -285,9 +293,13 @@
 		padding: 0 20px
 		margin-bottom: 28px
 		text-align: left
+		+r(680)
+			width: 100%
 	p
 		font: 600 18px "Open Sans", sans-serif
 		color: #fff
+		+r(600)
+			font-size: 16px
 .transfer__link
 	color: #039edf
 	font: 600 1.5em "Open Sans", sans-serif
