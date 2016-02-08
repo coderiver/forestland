@@ -123,8 +123,11 @@ $black: #3e3e3e
 	font-size: 48px
 	color: #fff
 	text-align: center
+	letter-spacing: 0.1em
 	&.title_black
 		color: #3e3e3e
+	&.title_white
+		color: #fff
 	&.title_magenta
 		color: $magenta
 	&.title_yellow
@@ -133,3 +136,10 @@ $black: #3e3e3e
 		color: #f9d800
 	&.title_orange
 		color: #f7921e
+	+r(1024)
+		font-size: 40px
+	+r(768)
+		font-size: 36px
+	+r(600)
+		font-size: 30px
+		letter-spacing: 0.01em

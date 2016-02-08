@@ -133,6 +133,7 @@
 		right: 0
 		margin: auto
 		top: 33px
+		position: absolute
 		+hide-text
 		
 	.btn-more
@@ -147,20 +148,13 @@
 	color: #000
 	text-align: center
 	font-size: 0
-	.odds__in
-		padding: 50px 0 20px
-	.odds__title
-		font-size: 48px
-		text-transform: uppercase
-		margin-bottom: 35px
-		+cult
-		color: $magenta
-		+r(1024)
-			font-size: 40px
-		+r(768)
-			font-size: 36px
+	.odds__wrp
 		+r(600)
-			font-size: 30px
+			margin: 0 -20px
+	.odds__in
+		padding: 50px 20px 20px
+	.title
+		margin-bottom: 35px
 	.odds__item
 		display: inline-block
 		width: 33.333%
@@ -289,19 +283,8 @@
 			text-align: right
 			+r(768)
 				text-align: left
-	.footer__title
-		+cult
-		font-size: 48px
-		color: #fff
-		text-align: center
-		text-transform: uppercase
+	.title
 		margin-bottom: 50px
-		+r(1024)
-			font-size: 40px
-		+r(768)
-			font-size: 36px
-		+r(600)
-			font-size: 30px
 	.footer__list
 		text-align: left
 		display: inline-block

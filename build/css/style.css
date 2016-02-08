@@ -68,8 +68,9 @@ img { max-width: 100%; height: auto; }
 .btn-more { width: 281px; color: #010101; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .btn-more:active { background-color: #e1c200; }
 
-.title { font-family: "Cultbold Bold", sans-serif; text-transform: uppercase; font-size: 48px; color: #fff; text-align: center; }
+.title { font-family: "Cultbold Bold", sans-serif; text-transform: uppercase; font-size: 48px; color: #fff; text-align: center; letter-spacing: 0.1em; }
 .title.title_black { color: #3e3e3e; }
+.title.title_white { color: #fff; }
 .title.title_magenta { color: #a11b5d; }
 .title.title_yellow { color: #ffdd00; }
 .title.title_yellow-next { color: #f9d800; }
@@ -101,12 +102,12 @@ img { max-width: 100%; height: auto; }
 
 .top { height: -webkit-calc(100vh - 100px); height: calc(100vh - 100px); min-height: 700px; background: url(../img/town.jpg) no-repeat center; padding-top: 31px; position: relative; text-align: center; }
 .top .top__in { padding: 0 30px; }
-.top .top__title { left: 0; right: 0; margin: auto; top: 33px; font: 0/0 a; text-shadow: none; color: transparent; }
+.top .top__title { left: 0; right: 0; margin: auto; top: 33px; position: absolute; font: 0/0 a; text-shadow: none; color: transparent; }
 .top .btn-more { display: inline-block; position: absolute; bottom: 98px; left: 0; right: 0; margin: auto; }
 
 .odds { position: relative; color: #000; text-align: center; font-size: 0; }
-.odds .odds__in { padding: 50px 0 20px; }
-.odds .odds__title { font-size: 48px; text-transform: uppercase; margin-bottom: 35px; font-family: "Cultbold Bold", sans-serif; color: #a11b5d; }
+.odds .odds__in { padding: 50px 20px 20px; }
+.odds .title { margin-bottom: 35px; }
 .odds .odds__item { display: inline-block; width: 33.333%; vertical-align: top; padding: 0 20px; margin-bottom: 15px; }
 .odds .odds__pic { height: 200px; margin-bottom: 39px; text-align: center; font-size: 0; }
 .odds .odds__pic:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
@@ -134,7 +135,7 @@ img { max-width: 100%; height: auto; }
 .footer .footer__col { width: 33.3%; display: inline-block; vertical-align: top; }
 .footer .footer__col.footer__col_centr { text-align: center; }
 .footer .footer__col.footer__col_right { text-align: right; }
-.footer .footer__title { font-family: "Cultbold Bold", sans-serif; font-size: 48px; color: #fff; text-align: center; text-transform: uppercase; margin-bottom: 50px; }
+.footer .title { margin-bottom: 50px; }
 .footer .footer__list { text-align: left; display: inline-block; }
 .footer .footer__list li { min-height: 42px; position: relative; }
 .footer .footer__list li:not(:last-child) { margin-bottom: 27px; }
@@ -147,24 +148,22 @@ img { max-width: 100%; height: auto; }
  .header__nav{ margin: 0 320px 0 250px; }
  .header__nav a{ font-size: 12px; } }
 @media only screen and (max-width: 1024px){
- .odds .odds__title{ font-size: 40px; }
+ .title{ font-size: 40px; }
  .odds .odds__item{ width: 50%; }
- .odds .odds__name{ font-size: 26px; }
- .footer .footer__title{ font-size: 40px; } }
+ .odds .odds__name{ font-size: 26px; } }
 @media only screen and (max-width: 768px){
- .odds .odds__title{ font-size: 36px; }
+ .title{ font-size: 36px; }
  .footer .footer__col{ width: 50%; margin-bottom: 30px; }
- .footer .footer__col.footer__col_right{ text-align: left; }
- .footer .footer__title{ font-size: 36px; } }
+ .footer .footer__col.footer__col_right{ text-align: left; } }
 @media only screen and (max-width: 640px){
  .about .col1{ float: none; width: 100%; margin-bottom: 15px; text-align: center; } }
 @media only screen and (max-width: 600px){
- .odds .odds__title{ font-size: 30px; }
+ .title{ font-size: 30px; letter-spacing: 0.01em; }
+ .odds .odds__wrp{ margin: 0 -20px; }
  .odds .odds__item{ width: 100%; margin-bottom: 25px; }
  .odds .odds__pic{ height: auto; margin-bottom: 20px; }
  .odds .odds__name{ font-size: 22px; margin-bottom: 10px; }
- .odds .odds__text{ font-size: 16px; }
- .footer .footer__title{ font-size: 30px; } }
+ .odds .odds__text{ font-size: 16px; } }
 @media only screen and (max-width: 560px){
  .footer .footer__col{ width: 100%; }
  .footer .footer__col.footer__col_centr{ text-align: left; } }
