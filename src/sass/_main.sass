@@ -161,12 +161,20 @@
 	.col1 
 		width: 67%
 		padding-right: 20px
+		+r(700)
+			width: 100% 
 	.col2
 		width: 33%
+		+r(700)
+			display: none 
+
 	p
 		font: 600 18px/24px "Open Sans", sans-serif
 		color: #fff
 		margin-bottom: 22px
+		+r(600)
+			font-size: 16px
+			margin-bottom: 15px
 		&:last-child
 			margin-bottom: 0
 .odds

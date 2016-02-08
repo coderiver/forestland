@@ -267,12 +267,16 @@ img { max-width: 100%; height: auto; }
  .title{ font-size: 36px; }
  .footer .footer__col{ width: 50%; margin-bottom: 30px; }
  .footer .footer__col.footer__col_right{ text-align: left; } }
+@media only screen and (max-width: 700px){
+ .complex .col1{ width: 100%; }
+ .complex .col2{ display: none; } }
 @media only screen and (max-width: 680px){
  .transfer [class^="col"], .transfer [class*="col"]{ width: 100%; } }
 @media only screen and (max-width: 640px){
  .about .col1{ float: none; width: 100%; margin-bottom: 15px; text-align: center; } }
 @media only screen and (max-width: 600px){
  .title{ font-size: 30px; letter-spacing: 0.01em; }
+ .complex p{ font-size: 16px; margin-bottom: 15px; }
  .odds .odds__wrp{ margin: 0 -20px; }
  .odds .odds__item{ width: 100%; margin-bottom: 25px; }
  .odds .odds__pic{ height: auto; margin-bottom: 20px; }

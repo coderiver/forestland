@@ -27,5 +27,6 @@ $(document).ready(function() {
 		arrows: false,
 		autoplay: true,
 		autoplaySpeed: 8000,
+		slidesToShow: 1,
 	});
 });
