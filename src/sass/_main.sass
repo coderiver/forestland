@@ -288,7 +288,7 @@
 		clear: both
 		+r(1024)
 			margin: 0 -20px
-	[class^="col"]
+	[class^="col"], [class*="col"]
 		display: inline-block
 		vertical-align: top
 		width: 50%
@@ -343,19 +343,71 @@
 			right: auto
 			background: url(../img/transfer__right.png) no-repeat
 			background-size: contain
+.bottom
+	position: relative
+	background-color: #efefef
+	.bottom__in
+		max-width: 1040px
+		margin: auto
+		padding: 70px 20px 46px
+		font-size: 0
+	.bottom__pic
+		text-align: center
+		margin: 62px 0 75px
+	.title_orange
+		margin-bottom: 36px
+	.title_black
+		margin-bottom: 48px
+	.tel
+		text-align: center
+		line-height: 1
+	[class^="col"], [class*="col"]
+		display: inline-block
+		vertical-align: top
+		margin-bottom: 60px
+	.col1
+		width: 40%
+		padding-right: 4%
+	.col2
+		width: 60%
+	.run
+		font-size: 0
+		[class*="run__col"]
+			width: 50%
+			padding-right: 48px
+			margin-bottom: 0
+		p
+			color: #646464
+			font: 600 18px "Open Sans", sans-serif
+		em
+			color: #f7921e
+			font: 600 24px "Open Sans", sans-serif
+			margin-bottom: 28px
+			display: block
+		.run__time
+			color: #3e3e3e
+			font: 700 18px/1 "Open Sans", sans-serif
+			margin-top: 5px
+			&.run__time_space
+				margin-top: 28px
+
+	address
+		color: #636363
+		font: normal 24px/36px "Open Sans", sans-serif
 .send-form
 	width: 100%
 	max-width: 597px
 	min-height: 500px
 	background-color: white
 	position: relative
-	padding: 34px 32px
+	padding: 29px 32px 34px
+	+clr
 	.send-form__header
 		color: #3e3e3e
 		font: 600 30px/30px "Open Sans", sans-serif
-		margin-bottom: 30px
+		margin-bottom: 27px
 	.send-form__row
-		margin-bottom: 15px
+		margin-bottom: 11px
 	label
 		display: block
 		color: #3e3e3e
