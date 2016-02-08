@@ -119,6 +119,8 @@
 	font-weight: 600
 	text-transform: uppercase
 	line-height: 1.2
+	&.tel_black
+		color: #4a4a4a
 .top
 	height: calc(100vh - 100px) 
 	min-height: 500px
@@ -341,6 +343,37 @@
 			right: auto
 			background: url(../img/transfer__right.png) no-repeat
 			background-size: contain
+.send-form
+	width: 100%
+	max-width: 597px
+	min-height: 500px
+	background-color: white
+	position: relative
+	padding: 34px 32px
+	.send-form__header
+		color: #3e3e3e
+		font: 600 30px/30px "Open Sans", sans-serif
+		margin-bottom: 30px
+	.send-form__row
+		margin-bottom: 15px
+	label
+		display: block
+		color: #3e3e3e
+		font: 400 18px/1 "Open Sans", sans-serif
+		margin-bottom: 9px
+.send-form__btn
+	padding: 8px 75px
+	background-color: #ee8f01
+	font: 400 18px "Open Sans", sans-serif
+	text-transform: uppercase
+	color: #fff
+	position: relative
+	+tr(all .3s)
+	float: right
+	&:hover
+		background-color: darken(#ee8f01, 5%)
+	&:active
+		background-color: #ED001A
 .footer
 	background-color: #4a4a4a
 	font-size: 0
