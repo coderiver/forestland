@@ -351,13 +351,21 @@
 		margin: auto
 		padding: 70px 20px 46px
 		font-size: 0
+		+r(600)
+			padding: 40px 20px
 	.bottom__pic
 		text-align: center
 		margin: 62px 0 75px
+		+r(930)
+			margin: 30px 0
 	.title_orange
 		margin-bottom: 36px
+		+r(900)
+			margin-bottom: 15px
 	.title_black
 		margin-bottom: 48px
+		+r(600)
+			margin-bottom: 20px
 	.tel
 		text-align: center
 		line-height: 1
@@ -365,25 +373,42 @@
 		display: inline-block
 		vertical-align: top
 		margin-bottom: 60px
+		+r(600)
+			margin-bottom: 40px
 	.col1
 		width: 40%
 		padding-right: 4%
+		+r(900)
+			width: 100%
 	.col2
 		width: 60%
+		+r(900)
+			width: 100%
+
 	.run
 		font-size: 0
 		[class*="run__col"]
 			width: 50%
 			padding-right: 48px
 			margin-bottom: 0
+			+r(900)
+				padding-right: 0
+				width: 100%
+				margin-bottom: 20px
 		p
 			color: #646464
 			font: 600 18px "Open Sans", sans-serif
+			+r(600)
+				font-size: 16px
 		em
 			color: #f7921e
 			font: 600 24px "Open Sans", sans-serif
 			margin-bottom: 28px
 			display: block
+			+r(900)
+				margin-bottom: 10px
+			+r(600)
+				font-size: 20px
 		.run__time
 			color: #3e3e3e
 			font: 700 18px/1 "Open Sans", sans-serif
@@ -394,18 +419,30 @@
 	address
 		color: #636363
 		font: normal 24px/36px "Open Sans", sans-serif
+		+r(900)
+			max-width: 400px
+			text-align: left
+			margin: auto
+		+r(600)
+			font-size: 20px
 .send-form
 	width: 100%
 	max-width: 597px
 	min-height: 500px
+	margin: auto
 	background-color: white
 	position: relative
 	padding: 29px 32px 34px
 	+clr
+	+r(500)
+		padding: 25px 20px
 	.send-form__header
 		color: #3e3e3e
 		font: 600 30px/30px "Open Sans", sans-serif
 		margin-bottom: 27px
+		+r(600)
+			font-size: 24px
+			margin-bottom: 20px
 	.send-form__row
 		margin-bottom: 11px
 	label
@@ -422,6 +459,8 @@
 	position: relative
 	+tr(all .3s)
 	float: right
+	+r(900)
+		width: 100%
 	&:hover
 		background-color: darken(#ee8f01, 5%)
 	&:active

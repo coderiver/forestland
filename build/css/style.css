@@ -174,7 +174,7 @@ img { max-width: 100%; height: auto; }
 .bottom .run .run__time.run__time_space { margin-top: 28px; }
 .bottom address { color: #636363; font: normal 24px/36px "Open Sans", sans-serif; }
 
-.send-form { width: 100%; max-width: 597px; min-height: 500px; background-color: white; position: relative; padding: 29px 32px 34px; *zoom: 1; }
+.send-form { width: 100%; max-width: 597px; min-height: 500px; margin: auto; background-color: white; position: relative; padding: 29px 32px 34px; *zoom: 1; }
 .send-form:after { content: " "; display: table; clear: both; }
 .send-form .send-form__header { color: #3e3e3e; font: 600 30px/30px "Open Sans", sans-serif; margin-bottom: 27px; }
 .send-form .send-form__row { margin-bottom: 11px; }
@@ -209,6 +209,16 @@ img { max-width: 100%; height: auto; }
 @media only screen and (max-width: 960px){
  .transfer .transfer__in{ padding: 60px 20px 60px; }
  .transfer .title i{ display: none; } }
+@media only screen and (max-width: 930px){
+ .bottom .bottom__pic{ margin: 30px 0; } }
+@media only screen and (max-width: 900px){
+ .bottom .title_orange{ margin-bottom: 15px; }
+ .bottom .col1{ width: 100%; }
+ .bottom .col2{ width: 100%; }
+ .bottom .run [class*="run__col"]{ padding-right: 0; width: 100%; margin-bottom: 20px; }
+ .bottom .run em{ margin-bottom: 10px; }
+ .bottom address{ max-width: 400px; text-align: left; margin: auto; }
+ .send-form__btn{ width: 100%; } }
 @media only screen and (max-width: 768px){
  .title{ font-size: 36px; }
  .footer .footer__col{ width: 50%; margin-bottom: 30px; }
@@ -226,10 +236,19 @@ img { max-width: 100%; height: auto; }
  .odds .odds__text{ font-size: 16px; }
  .about p{ font-size: 16px; }
  .transfer .transfer__in{ padding: 40px 20px 40px; }
- .transfer p{ font-size: 16px; } }
+ .transfer p{ font-size: 16px; }
+ .bottom .bottom__in{ padding: 40px 20px; }
+ .bottom .title_black{ margin-bottom: 20px; }
+ .bottom [class^="col"], .bottom [class*="col"]{ margin-bottom: 40px; }
+ .bottom .run p{ font-size: 16px; }
+ .bottom .run em{ font-size: 20px; }
+ .bottom address{ font-size: 20px; }
+ .send-form .send-form__header{ font-size: 24px; margin-bottom: 20px; } }
 @media only screen and (max-width: 560px){
  .footer .footer__col{ width: 100%; }
  .footer .footer__col.footer__col_centr{ text-align: left; } }
+@media only screen and (max-width: 500px){
+ .send-form{ padding: 25px 20px; } }
 
 
 
