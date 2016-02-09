@@ -171,12 +171,12 @@ img { max-width: 100%; height: auto; }
 .odds .odds__text { font: 600 18px "Open Sans", sans-serif; max-width: 430px; margin: auto; color: #3e3e3e; line-height: 1.45; }
 
 .items { position: relative; font-size: 0; }
-.items .item { display: inline-block; vertical-align: top; height: 300px; width: 50%; text-align: center; background-size: cover; position: relative; }
-.items .item .item__link { width: 648px; height: 192px; margin: auto; background-size: contain; display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 1; }
-.items .item_left { background: url(../img/item-left.jpg) no-repeat center; }
+.items .item { display: inline-block; vertical-align: top; height: 300px; width: 50%; text-align: center; position: relative; }
+.items .item .item__link { width: 648px; height: 192px; margin: auto; background-size: contain !important; display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 1; }
+.items .item_left { background: url(../img/item-left.jpg) no-repeat center; background-size: cover; }
 .items .item_left .item__link { background: url(../img/item__link-left.png) no-repeat; }
 .items .item_left .item__link:hover { background: url(../img/item__link-left-h.png) no-repeat; }
-.items .item_right { background: url(../img/item-right.jpg) no-repeat center; }
+.items .item_right { background: url(../img/item-right.jpg) no-repeat center; background-size: cover; }
 .items .item_right .item__link { background: url(../img/item__link-right.png) no-repeat; }
 .items .item_right .item__link:hover { background: url(../img/item__link-right-h.png) no-repeat; }
 .items .title { line-height: 1; margin: 55px 0 7px; }
@@ -257,6 +257,8 @@ img { max-width: 100%; height: auto; }
 @media only screen and (max-width: 1660px){
  .header__nav{ margin: 0 320px 0 250px; }
  .header__nav a{ font-size: 12px; } }
+@media only screen and (max-width: 1365px){
+ .items .item{ width: 100%; } }
 @media only screen and (max-width: 1024px){
  .title{ font-size: 40px; }
  .odds .odds__item{ width: 50%; }
@@ -277,6 +279,14 @@ img { max-width: 100%; height: auto; }
  .send-form__btn{ width: 100%; } }
 @media only screen and (max-width: 768px){
  .title{ font-size: 36px; }
+ .items .item{ height: 250px; }
+ .items .item .item__link{ width: 70%; height: 100px; padding: 20px; }
+ .items .item_left .item__link{ background: #009BDD; }
+ .items .item_left .item__link:hover{ background: #F28F1D; }
+ .items .item_right .item__link{ background: #009BDD; }
+ .items .item_right .item__link:hover{ background: #F28F1D; }
+ .items .title{ margin: 0 auto 5px; }
+ .items span{ font-size: 22px; }
  .footer .footer__col{ width: 50%; margin-bottom: 30px; }
  .footer .footer__col.footer__col_right{ text-align: left; } }
 @media only screen and (max-width: 700px){
@@ -294,6 +304,9 @@ img { max-width: 100%; height: auto; }
  .odds .odds__pic{ height: auto; margin-bottom: 20px; }
  .odds .odds__name{ font-size: 22px; margin-bottom: 10px; }
  .odds .odds__text{ font-size: 16px; }
+ .items .item{ height: 200px; }
+ .items .item .item__link{ width: 80%; }
+ .items span{ font-size: 20px; }
  .about p{ font-size: 16px; }
  .transfer .transfer__in{ padding: 40px 20px 40px; }
  .transfer p{ font-size: 16px; }
@@ -308,7 +321,10 @@ img { max-width: 100%; height: auto; }
  .footer .footer__col{ width: 100%; }
  .footer .footer__col.footer__col_centr{ text-align: left; } }
 @media only screen and (max-width: 500px){
+ .items .item .item__link{ width: 90%; height: 110px; }
  .send-form{ padding: 25px 20px; } }
+@media only screen and (max-width: 400px){
+ .items span{ font-size: 18px; } }
 
 
 
