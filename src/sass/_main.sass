@@ -24,17 +24,94 @@
 		position: absolute
 		top: 16px
 		right: 42px
+		+r(1365)
+			top: 0
+			right: 112px
+		+r(1200)
+			top: 5px
+			right: 103px
+			.tel
+				font-size: 30px
+		+r(900)
+			top: 10px
+			.tel
+				font-size: 24px
+		+r(768)
+			top: 14px
+			right: 83px
+			.tel
+				font-size: 18px
+		+r(500)
+			right: 68px
+			top: 19px
+			.tel
+				font-size: 14px
 	.btn-callback
 		position: absolute
 		z-index: 100
 		top: 100%
 		transform: translateY(-50%)
 		right: 27px
+		+r(1365)
+			top: 44px
+			transform: translateY(0)
+			height: 50px
+			right: 100px
+		+r(1200)
+			font-size: 16px
+			span
+				padding-right: 0
+			i
+				margin-right: 0
+		+r(900)
+			font-size: 14px
+		+r(768)
+			font-size: 12px
+			height: 40px
+			right: 80px
+			i
+				display: none
+		+r(500)
+			font-size: 10px
+			padding: 0 6px
+			right: 65px
 	.header__logo
 		position: absolute
 		top: 50%
 		transform: translateY(-50%)
 		left: 35px
+		line-height: 1
+		+r(1147)
+			left: 20px
+		+r(500)
+			.logo
+				font-size: 60px
+		+r(400)
+			.logo
+				font-size: 55px
+		+r(350)
+			.logo
+				font-size: 50px
+	.header__logo_big
+		+rm(1365)
+			width: 252px
+			height: 252px
+			background-color: $green
+			left: 3px
+			top: -57px
+			border-radius: 50%
+			z-index: 110
+			text-align: center
+			transform: translateY(0)
+			.logo
+				font-size: 132px
+				margin-top: 67px
+				position: absolute
+				left: 0
+				right: 0
+				margin: 33px auto 0
+				top: 50%
+				transform: translateY(-50%)
 .header__nav
 	font-size: 0
 	display: inline-block
@@ -43,6 +120,8 @@
 	white-space: nowrap
 	+r(1660)
 		margin: 0 320px 0 250px
+	+r(1365)
+		display: none
 	li
 		display: inline-block
 		padding: 0 12px
@@ -89,25 +168,67 @@
 			right: -2.4444444444444446em // 44px / 18px
 			margin-right: 1.2222222222222223em // 22px / 18px
 			background: url(../img/nav__right.png) no-repeat
-.header__logo_big
+.header__nav-mob
 	position: absolute
-	width: 252px
-	height: 252px
-	background-color: $green
-	left: 3px
-	top: -57px
-	border-radius: 50%
+	top: 100%
 	z-index: 100
-	text-align: center
-	.logo
-		font-size: 132px
-		margin-top: 67px
+	left: 0
+	right: 0
+	display: none
+	&.is-visible
+		display: block
+	li
+		display: block
+		padding: 4px 10px
+		text-align: center
+		border-bottom: 1px solid #ccc
+		background-color: #fff
+		+tr(all .3s)
+		&:focus, &:hover
+			background-color: #CEE0F7
+		a
+			display: block
+			color: black
+			font-family: "Open Sans", sans-serif
+			font-size: 18px
+			font-weight: 600
+			text-transform: uppercase
+			line-height: 1.2
+.humb
+	display: none
+	position: relative
+	float: right
+	width: 30px
+	margin: 37px 35px
+	padding: 11px 0
+	background: none
+	+r(1365)
+		display: block
+	+r(768)
+		margin-left: 20px
+		margin-right: 20px
+	+r(500)
+		margin-left: 10px
+		margin-right: 15px
+	span
+		display: block
+		height: 4px
+		background: #fff
+		+tr(opacity 0.2s)
+	&:before, &:after 
+		content: ""
 		position: absolute
 		left: 0
 		right: 0
-		margin: 33px auto 0
-		top: 50%
-		transform: translateY(-50%)
+		height: 4px
+		background: #fff
+		+tr(transform 0.3s)
+		will-change: transform
+	&:before
+		top: 0
+	&:after
+		bottom: 0
+	
 .logo
 	font-size: 73px
 	color: white
@@ -161,11 +282,11 @@
 	.col1 
 		width: 67%
 		padding-right: 20px
-		+r(700)
+		+r(768)
 			width: 100% 
 	.col2
 		width: 33%
-		+r(700)
+		+r(768)
 			display: none 
 
 	p
