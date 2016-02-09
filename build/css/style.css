@@ -170,6 +170,18 @@ img { max-width: 100%; height: auto; }
 .odds .odds__name { font-family: "Cultbold Bold", sans-serif; font-size: 30px; color: #3e3e3e; margin-bottom: 20px; text-transform: uppercase; line-height: 1; }
 .odds .odds__text { font: 600 18px "Open Sans", sans-serif; max-width: 430px; margin: auto; color: #3e3e3e; line-height: 1.45; }
 
+.items { position: relative; font-size: 0; }
+.items .item { display: inline-block; vertical-align: top; height: 300px; width: 50%; text-align: center; background-size: cover; position: relative; }
+.items .item .item__link { width: 648px; height: 192px; margin: auto; background-size: contain; display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 1; }
+.items .item_left { background: url(../img/item-left.jpg) no-repeat center; }
+.items .item_left .item__link { background: url(../img/item__link-left.png) no-repeat; }
+.items .item_left .item__link:hover { background: url(../img/item__link-left-h.png) no-repeat; }
+.items .item_right { background: url(../img/item-right.jpg) no-repeat center; }
+.items .item_right .item__link { background: url(../img/item__link-right.png) no-repeat; }
+.items .item_right .item__link:hover { background: url(../img/item__link-right-h.png) no-repeat; }
+.items .title { line-height: 1; margin: 55px 0 7px; }
+.items span { font: 400 24px "Open Sans", sans-serif; color: #fff; line-height: 1; }
+
 .about { background-color: #FFF; min-height: 560px; text-align: center; }
 .about .about__in { position: relative; max-width: 860px; padding: 50px 20px; margin: auto; *zoom: 1; }
 .about .about__in:after { content: " "; display: table; clear: both; }

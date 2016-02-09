@@ -229,6 +229,49 @@
 		line-height: 1.45
 		+r(600)
 			font-size: 16px
+.items
+	position: relative
+	font-size: 0
+	.item
+		display: inline-block
+		vertical-align: top
+		height: 300px
+		width: 50%
+		text-align: center
+		background-size: cover
+		position: relative
+		.item__link
+			width: 648px
+			height: 192px
+			margin: auto
+			background-size: contain
+			display: block
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			z-index: 1
+	.item_left
+		background: url(../img/item-left.jpg) no-repeat center
+		.item__link
+			background: url(../img/item__link-left.png) no-repeat
+			&:hover
+				background: url(../img/item__link-left-h.png) no-repeat
+	.item_right
+		background: url(../img/item-right.jpg) no-repeat center
+		.item__link
+			background: url(../img/item__link-right.png) no-repeat
+			&:hover
+				background: url(../img/item__link-right-h.png) no-repeat
+	.title
+		line-height: 1
+		margin: 55px 0 7px
+	span
+		font: 400 24px "Open Sans", sans-serif
+		color: #fff
+		line-height: 1
+
 .about
 	background-color: #FFF
 	min-height: 560px
