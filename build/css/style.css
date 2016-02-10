@@ -208,8 +208,8 @@ img { max-width: 100%; height: auto; }
 .room .room__sub { color: #a1185b; font: 700 24px/1 "Open Sans", sans-serif; }
 .room .room__sub sup { vertical-align: top; }
 .room .room__link { color: white; font: 600 18px "Open Sans", sans-serif; text-align: center; position: relative; display: inline-block; z-index: 1; height: 2em; line-height: 2em; }
-.room .room__link:hover .room__link-bg:before { background: url(../img/room_link-l-hov.png) no-repeat; }
-.room .room__link:hover .room__link-bg:after { background: url(../img/room_link-r-hov.png) no-repeat; }
+.room .room__link:hover .room__link-bg:before { background: url(../img/room_link-l-hov.png) no-repeat; background-size: contain !important; }
+.room .room__link:hover .room__link-bg:after { background: url(../img/room_link-r-hov.png) no-repeat; background-size: contain !important; }
 .room .room__link-bg { position: absolute; display: block; z-index: -1; width: 100%; height: 100%; top: 0; }
 .room .room__link-bg:before, .room .room__link-bg:after { content: " "; display: block; width: 4.77778em; height: 2.38889em; position: absolute; left: -1.88889em; top: -0.16667em; background: url(../img/room_link-l.png) no-repeat; background-size: contain; }
 .room .room__link-bg:after { left: auto; right: -1.88889em; background: url(../img/room_link-r.png) no-repeat; background-size: contain; }
