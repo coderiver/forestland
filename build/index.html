@@ -434,6 +434,10 @@
 							<label for="">E-mail</label>
 							<input type="text" class="input" placeholder="Введите свой E-mail">
 						</div>
+						<div class="send-form__row" style="display: none">
+							<label for="">Телефон</label>
+							<input type="text" class="input" placeholder="Введите свой телефон">
+						</div>
 						<div class="send-form__row">
 							<label for="">E-mail</label>
 							<textarea name="text-field" class="input input-field" placeholder="Ваш вопрос"></textarea>
@@ -488,5 +492,31 @@
 	</div>
 </div>
 <!-- END out-->
+<!-- BEGIN popup -->
+<div class="popup is-active">
+	<div class="popup__block">
+		<button type="button" class="btn-close"></button>
+		<div class="popup__container">
+			<div class="popup__col1"><i class="icon-logo"></i></div>
+			<div class="popup__col2">
+				<form action="" class="send-form send-form_popup">
+					<h2 class="send-form__header">
+						Заказать обратную связь
+					</h2>
+					<div class="send-form__row">
+						<label for="">Имя</label>
+						<input type="text" class="input" placeholder="Введите свое имя">
+					</div>
+					<div class="send-form__row">
+						<label for="">Телефон</label>
+						<input type="text" class="input" placeholder="Введите свой телефон">
+					</div>
+					<button type="button" class="send-form__btn">отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END popup -->
 </body>
 </html>

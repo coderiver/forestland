@@ -400,8 +400,6 @@
 		text-align: center
 		margin-bottom: 40px
 		+r(1228)
-			margin: 0 25px 40px
-		+r(768)
 			margin: 0 0 40px
 	.tabs__controls-item
 		display: inline-block
@@ -828,7 +826,6 @@
 .send-form
 	width: 100%
 	max-width: 597px
-	min-height: 500px
 	margin: auto
 	background-color: white
 	position: relative
@@ -866,6 +863,8 @@
 		background-color: darken(#ee8f01, 5%)
 	&:active
 		background-color: #ED001A
+.send-form_popup
+	max-width: none
 .footer
 	background-color: #4a4a4a
 	font-size: 0
@@ -919,3 +918,24 @@
 			display: inline-block
 			&:hover
 				text-decoration: none
+.popup
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	position: fixed
+	background-color: rgba(0, 100, 39, 0.8)
+	z-index: 999
+	display: none
+	.popup__block
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+		position: fixed
+		max-width: 886px
+		height: 398px
+		background-color: white
+		z-index: 9999999
+		padding: 79px 79px 57px
