@@ -399,15 +399,20 @@
 		font-size: 0
 		text-align: center
 		margin-bottom: 40px
+		+r(1228)
+			margin: 0 25px 40px
+		+r(768)
+			margin: 0 0 40px
 	.tabs__controls-item
 		display: inline-block
-		width: 279px
-		height: 48px
 		border-top-left-radius: 48px
 		border-top-right-radius: 48px
 		cursor: pointer
 		background: #c9e08f
 		+tr(all .3s)
+		+r(950)
+			border-radius: 0
+			width: 100%
 		&.is-active
 			background: #a1185b
 			.tabs__control-link
@@ -417,11 +422,14 @@
 		text-decoration: none
 		display: block
 		text-align: center
-		padding: 15px
+		padding: 15px 34px
 		font: 600 18px/1 "Open Sans", sans-serif
 		+tr(all .3s)
 	.tabs__list
 		margin: 0 -25px
+		+r(1228)
+			margin-left: 0
+			margin-right: 0
 	.tabs__item
 		list-style: none outside none
 		display: none
@@ -434,13 +442,19 @@
 	width: 33.3333%
 	margin-bottom: 30px
 	padding: 0 25px
+	+r(768)
+		padding: 0 10px
+		width: 50%
+	+r(400)
+		width: 100%
+		padding: 0 20px
 	figcaption
 		margin-top: 33px
 	.room__pic
 		position: relative
 		.room__link
 			position: absolute
-			right: 1.94444em // 35px / 18px
+			right: 1.8888888888888888em // 34px / 18px
 			top: 100%
 			margin-top: -1em
 		img
@@ -451,9 +465,17 @@
 		color: white
 		font: 400 24px/1 "Open Sans", sans-serif 
 		text-transform: uppercase
+		+r(1024)
+			font-size: 20px
+		+r(768)
+			font-size: 18px
 	.room__sub
 		color: #a1185b
 		font: 700 24px/1 "Open Sans", sans-serif 
+		+r(1024)
+			font-size: 20px
+		+r(768)
+			font-size: 18px
 		sup
 			vertical-align: top
 	.room__link
@@ -465,6 +487,14 @@
 		z-index: 1
 		height: 2em //36px / 18px
 		line-height: 2em //36px / 18px
+		&:hover
+			.room__link-bg
+				&:before
+					background: url(../img/room_link-l-hov.png) no-repeat
+				&:after
+					background: url(../img/room_link-r-hov.png) no-repeat
+		+r(1024)
+			font-size: 16px
 	.room__link-bg
 		position: absolute
 		display: block
@@ -478,13 +508,13 @@
 			width: 4.777777777777778em // 86px / 18px
 			height: 2.388888888888889em // 43px / 18px
 			position: absolute
-			left: -1.9444444444444444em// 35px / 18px
+			left: -1.8888888888888888em // 34px / 18px
 			top: -0.16666666666666666em // -3px / 18px
 			background: url(../img/room_link-l.png) no-repeat
 			background-size: contain
 		&:after
 			left: auto
-			right: -1.9444444444444444em // 35px / 18px
+			right: -1.8888888888888888em // 34px / 18px
 			background: url(../img/room_link-r.png) no-repeat
 			background-size: contain
 
