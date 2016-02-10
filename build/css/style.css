@@ -440,6 +440,8 @@ img { max-width: 100%; height: auto; }
  .items .title{ font-size: 24px; }
  .items span{ font-size: 16px; }
  .send-form{ padding: 25px 20px; } }
+@media only screen and (max-height: 500px){
+ .header{ position: absolute; } }
 @media only screen and (max-width: 480px){
  .about .about__link{ font-size: 1.1em; } }
 @media only screen and (max-width: 400px){
