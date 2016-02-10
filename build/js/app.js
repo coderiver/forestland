@@ -41,4 +41,17 @@ $(document).ready(function() {
 	$('.js-humb').on('click', function() {
 		$('.header__nav-mob').toggleClass('is-visible');
 	});
+	$('.tabs__control-link').on('click', function(e){
+		e.preventDefault();
+
+		var item = $(this).closest('.tabs__controls-item'),
+			contentItem = $('.tabs__item'),
+			itemPosition = item.index();
+
+		contentItem.eq(itemPosition)
+			.add(item)
+			.addClass('is-active')
+			.siblings()
+			.removeClass('is-active');
+	});
 });
