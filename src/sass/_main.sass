@@ -2,6 +2,8 @@
 .out
 	background: url(../img/bg.jpg) repeat
 	padding: 0 20px
+	+r(900)
+		padding: 0
 .wrapper
 	max-width: 1600px
 	height: 7892px
@@ -20,6 +22,9 @@
 	margin: auto
 	max-width: 1600px
 	z-index: 999
+	+r(900)
+		left: 0
+		right: 0
 	.header__tel
 		position: absolute
 		top: 16px
@@ -701,6 +706,7 @@
 	float: right
 	+r(900)
 		width: 100%
+		float: none
 	&:hover
 		background-color: darken(#ee8f01, 5%)
 	&:active
