@@ -109,6 +109,8 @@ img { max-width: 100%; height: auto; }
 .btn-more { width: 281px; color: #010101; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .btn-more:active { background-color: #e1c200; }
 
+.btn-close { width: 15px; height: 16px; background: url(../img/btn-close.png) no-repeat center; cursor: pointer; }
+
 .title { font-family: "Cultbold Bold", sans-serif; text-transform: uppercase; font-size: 48px; color: #fff; text-align: center; letter-spacing: 0.1em; }
 .title.title_black { color: #3e3e3e; }
 .title.title_white { color: #fff; }
@@ -284,8 +286,6 @@ img { max-width: 100%; height: auto; }
 .send-form__btn:hover { background-color: #d58001; }
 .send-form__btn:active { background-color: #ED001A; }
 
-.send-form_popup { max-width: none; }
-
 .footer { background-color: #4a4a4a; font-size: 0; }
 .footer .footer__in { padding: 46px 20px 80px; max-width: 840px; margin: auto; }
 .footer .footer__col { width: 33.3%; display: inline-block; vertical-align: top; }
@@ -300,7 +300,18 @@ img { max-width: 100%; height: auto; }
 .footer .footer__list a:hover { text-decoration: none; }
 
 .popup { top: 0; bottom: 0; right: 0; left: 0; position: fixed; background-color: rgba(0, 100, 39, 0.8); z-index: 999; display: none; }
-.popup .popup__block { top: 0; bottom: 0; left: 0; right: 0; margin: auto; position: fixed; max-width: 886px; height: 398px; background-color: white; z-index: 9999999; padding: 79px 79px 57px; }
+.popup.is-active { display: block; }
+.popup .popup__block { top: 0; bottom: 0; left: 0; right: 0; margin: auto; position: fixed; max-width: 886px; height: 398px; background-color: white; z-index: 9999999; }
+.popup .popup__container { font-size: 0; margin: auto; max-width: 768px; padding: 69px 20px 57px; }
+.popup [class*="col"], .popup [class^="col"] { display: inline-block; vertical-align: middle; }
+.popup .popup__col2 { width: 73%; }
+.popup .popup__col1 { width: 27%; }
+.popup .icon-logo { color: #009d3d; font-size: 137px; }
+.popup .btn-close { position: absolute; top: 37px; right: 40px; }
+.popup .send-form { max-width: none; padding: 0; }
+.popup .send-form label { font-size: 16px; font-style: italic; }
+.popup .send-form__header { font-size: 24px; text-transform: uppercase; margin-bottom: 25px; }
+.popup .send-form__btn { margin-top: 24px; font-size: 16px; padding: 9px 81px; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1660px){

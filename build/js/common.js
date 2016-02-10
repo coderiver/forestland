@@ -30,4 +30,11 @@ $(document).ready(function() {
 			.siblings()
 			.removeClass('is-active');
 	});
+	$(".js-popup").on("click", function(){
+			$(".popup").toggleClass('is-active');
+		});
+
+		$(".js-close").on("click", function(){
+			$(".popup").removeClass('is-active');
+		});
 });

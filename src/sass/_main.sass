@@ -863,8 +863,6 @@
 		background-color: darken(#ee8f01, 5%)
 	&:active
 		background-color: #ED001A
-.send-form_popup
-	max-width: none
 .footer
 	background-color: #4a4a4a
 	font-size: 0
@@ -927,6 +925,8 @@
 	background-color: rgba(0, 100, 39, 0.8)
 	z-index: 999
 	display: none
+	&.is-active
+		display: block
 	.popup__block
 		top: 0
 		bottom: 0
@@ -938,4 +938,36 @@
 		height: 398px
 		background-color: white
 		z-index: 9999999
-		padding: 79px 79px 57px
+	.popup__container
+		font-size: 0
+		margin: auto 
+		max-width: 768px
+		padding: 69px 20px 57px
+	[class*="col"], [class^="col"]
+		display: inline-block
+		vertical-align: middle
+	.popup__col2
+		width: 73%
+	.popup__col1
+		width: 27%
+	.icon-logo
+		color: #009d3d
+		font-size: 137px
+	.btn-close
+		position: absolute
+		top: 37px
+		right: 40px
+	.send-form
+		max-width: none
+		padding: 0
+		label
+			font-size: 16px
+			font-style: italic
+	.send-form__header
+		font-size: 24px
+		text-transform: uppercase
+		margin-bottom: 25px
+	.send-form__btn
+		margin-top: 24px
+		font-size: 16px
+		padding: 9px 81px
