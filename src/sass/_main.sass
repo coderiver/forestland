@@ -365,20 +365,32 @@
 		line-height: 1.45
 		+r(600)
 			font-size: 16px
+.layout
+	min-height: 700px
+	background-color: $green
+	.layout__in
+		padding: 42px 20px 56px
+		margin: auto
+		max-width: 1160px
+	.title
+		margin-bottom: 28px
 .tabs
 	position: relative
 	.tabs__controls
 		border-bottom: 2px solid #a1185b
 		font-size: 0
+		text-align: center
+		margin-bottom: 40px
 	.tabs__controls-item
 		display: inline-block
 		width: 279px
 		height: 48px
 		border-top-left-radius: 48px
 		border-top-right-radius: 48px
+		cursor: pointer
 		background: #c9e08f
-		+tr(all .2s)
-		&:hover, &.is-active
+		+tr(all .3s)
+		&.is-active
 			background: #a1185b
 			.tabs__control-link
 				color: #fff
@@ -389,13 +401,31 @@
 		text-align: center
 		padding: 15px
 		font: 600 18px/1 "Open Sans", sans-serif
+		+tr(all .3s)
 	.tabs__list
 		// border: 1px dashed #ccc
 	.tabs__item
 		list-style: none outside none
 		display: none
+		font-size: 0
 		&.is-active
 			display: block
+.room
+	display: inline-block
+	vertical-align: top
+	width: 33.3333%
+	margin-bottom: 30px
+	figcaption
+		margin-top: 33px
+	.room__name
+		color: white
+		font: 400 24px/1 "Open Sans", sans-serif 
+		text-transform: uppercase
+	.room__sub
+		color: #a1185b
+		font: 700 24px/1 "Open Sans", sans-serif 
+		sup
+			vertical-align: top
 .items
 	position: relative
 	font-size: 0
