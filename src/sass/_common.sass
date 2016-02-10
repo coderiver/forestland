@@ -171,5 +171,11 @@ $black: #3e3e3e
 //arrows
 .arrow-left
 	+arr(60, 70, #cee09f, l)
+	&:hover
+		border-right-color: orange
+		+tr(all 0.3s)
 .arrow-right
 	+arr(60, 70, #fff, r)
+	&:hover
+		border-left-color: orange
+		+tr(all 0.3s)

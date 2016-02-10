@@ -124,8 +124,10 @@ img { max-width: 100%; height: auto; }
 .input-field { resize: none; height: 120px; }
 
 .arrow-left { width: 0px; height: 0px; border-style: solid; border-width: 35px 60px 35px 0; border-color: transparent #cee09f transparent transparent; }
+.arrow-left:hover { border-right-color: orange; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
 .arrow-right { width: 0px; height: 0px; border-style: solid; border-width: 35px 0 35px 60px; border-color: transparent transparent transparent #fff; }
+.arrow-right:hover { border-left-color: orange; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
 .out { background: url(../img/bg.jpg) repeat; padding: 0 20px; }
 
