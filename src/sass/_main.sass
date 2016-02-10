@@ -925,6 +925,7 @@
 	background-color: rgba(0, 100, 39, 0.8)
 	z-index: 999
 	display: none
+	overflow: auto
 	&.is-active
 		display: block
 	.popup__block
@@ -933,11 +934,15 @@
 		left: 0
 		right: 0
 		margin: auto
-		position: fixed
+		position: absolute
 		max-width: 886px
 		height: 398px
 		background-color: white
 		z-index: 9999999
+		+r(960)
+			max-width: none
+			width: 95%
+			min-width: 380px
 	.popup__container
 		font-size: 0
 		margin: auto 
@@ -948,8 +953,12 @@
 		vertical-align: middle
 	.popup__col2
 		width: 73%
+		+r(650)
+			width: 100%
 	.popup__col1
 		width: 27%
+		+r(650)
+			display: none
 	.icon-logo
 		color: #009d3d
 		font-size: 137px
@@ -957,6 +966,9 @@
 		position: absolute
 		top: 37px
 		right: 40px
+		+r(821)
+			right: 20px
+			top: 30px
 	.send-form
 		max-width: none
 		padding: 0
