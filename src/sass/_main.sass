@@ -369,13 +369,31 @@
 	min-height: 700px
 	background-color: $green
 	.layout__in
-		padding: 42px 20px 56px
+		padding: 42px 0 56px
 		margin: auto
-		max-width: 1160px
+		max-width: 1118px
 	.title
 		margin-bottom: 28px
 .tabs
 	position: relative
+	.arrow-left
+		top: 50%
+		left: -110px
+		position: absolute
+		transform: translateY(-50%)
+		+r(1400)
+			left: -80px
+		+r(1350)
+			display: none
+	.arrow-right
+		top: 50%
+		right: -110px
+		position: absolute
+		transform: translateY(-50%)
+		+r(1400)
+			right: -80px
+		+r(1350)
+			display: none
 	.tabs__controls
 		border-bottom: 2px solid #a1185b
 		font-size: 0
@@ -403,7 +421,7 @@
 		font: 600 18px/1 "Open Sans", sans-serif
 		+tr(all .3s)
 	.tabs__list
-		// border: 1px dashed #ccc
+		margin: 0 -25px
 	.tabs__item
 		list-style: none outside none
 		display: none
@@ -415,8 +433,20 @@
 	vertical-align: top
 	width: 33.3333%
 	margin-bottom: 30px
+	padding: 0 25px
 	figcaption
 		margin-top: 33px
+	.room__pic
+		position: relative
+		.room__link
+			position: absolute
+			right: 1.94444em // 35px / 18px
+			top: 100%
+			margin-top: -1em
+		img
+			display: inline-block
+			width: 100%
+			max-width: none
 	.room__name
 		color: white
 		font: 400 24px/1 "Open Sans", sans-serif 
@@ -426,6 +456,38 @@
 		font: 700 24px/1 "Open Sans", sans-serif 
 		sup
 			vertical-align: top
+	.room__link
+		color: white
+		font: 600 18px "Open Sans", sans-serif 
+		text-align: center
+		position: relative
+		display: inline-block
+		z-index: 1
+		height: 2em //36px / 18px
+		line-height: 2em //36px / 18px
+	.room__link-bg
+		position: absolute
+		display: block
+		z-index: -1
+		width: 100%
+		height: 100%
+		top: 0
+		&:before, &:after
+			content: ' '
+			display: block
+			width: 4.777777777777778em // 86px / 18px
+			height: 2.388888888888889em // 43px / 18px
+			position: absolute
+			left: -1.9444444444444444em// 35px / 18px
+			top: -0.16666666666666666em // -3px / 18px
+			background: url(../img/room_link-l.png) no-repeat
+			background-size: contain
+		&:after
+			left: auto
+			right: -1.9444444444444444em // 35px / 18px
+			background: url(../img/room_link-r.png) no-repeat
+			background-size: contain
+
 .items
 	position: relative
 	font-size: 0
