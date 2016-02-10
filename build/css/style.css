@@ -107,7 +107,7 @@ img { max-width: 100%; height: auto; }
 .btn-callback i, .btn-callback span { vertical-align: middle; }
 
 .btn-more { width: 281px; color: #010101; -webkit-transition: all 0.3s; transition: all 0.3s; }
-.btn-more:active { background-color: #e1c200; }
+.btn-more:hover, .btn-more:active { background-color: #a11b5d; color: #fff; }
 
 .btn-close { width: 15px; height: 16px; background: url(../img/btn-close.png) no-repeat center; cursor: pointer; }
 

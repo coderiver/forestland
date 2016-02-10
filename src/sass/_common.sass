@@ -120,8 +120,9 @@ $black: #3e3e3e
 	width: 281px
 	color: #010101
 	+tr(all .3s)
-	&:active
-		background-color: darken($yellow, 4%)
+	&:hover, &:active
+		background-color: $magenta
+		color: #fff
 .btn-close
 	width: 15px
 	height: 16px
