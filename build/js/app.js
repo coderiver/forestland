@@ -60,12 +60,17 @@ $(document).ready(function() {
 	$(".js-close").on("click", function(){
 		$(".popup").removeClass('is-active');
 	});
-	$(".js-pop").on("click", function(){
-		$(".pop").addClass('is-active');
-		$("body").addClass('is-hidden');
-	});
-	$(".js-closed").on("click", function(){
-		$(".pop").removeClass('is-active');
-		$("body").removeClass('is-hidden');
+	$(window).on('resize', function(){
+		var width = $(window).width()
+		if( width < 1100) {
+			$(".js-pop").on("click", function(){
+				$(".pop").addClass('is-active');
+				$("body").addClass('is-hidden');
+			});
+			$(".js-closed").on("click", function(){
+				$(".pop").removeClass('is-active');
+				$("body").removeClass('is-hidden');
+			});
+		}
 	});
 });
