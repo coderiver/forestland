@@ -339,11 +339,14 @@ sub { vertical-align: bottom; }
 
 .flat-wrp { overflow: auto; padding: 50px; }
 
-.flat { min-width: 1394px; }
+.flat { width: 1394px; margin: auto; }
 .flat td, .flat th { vertical-align: top; }
 .flat .is-center { text-align: center; }
 .flat .add-spacing9 { padding: 58px 0 0 70px; }
 .flat .add-spacing8 { padding: 0 145px 0 145px; }
+.flat .add-spacing7 { padding: 42px 0 0 77px; }
+.flat .add-spacing6 { padding: 18px 0 0 167px; }
+.flat .add-spacing5 { padding: 20px 0 0 88px; }
 
 .flat__top { display: inline-block; text-align: center; margin-bottom: 36px; }
 .flat__top strong, .flat__top span { color: #3e3e3e; font: 600 36px "Open Sans", sans-serif; }
