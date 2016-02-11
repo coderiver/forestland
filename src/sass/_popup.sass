@@ -1,0 +1,93 @@
+.popup
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	position: fixed
+	background-color: rgba(0, 100, 39, 0.8)
+	z-index: 999
+	display: none
+	overflow: auto
+	&.is-active
+		display: block
+	.popup__block
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+		position: absolute
+		max-width: 886px
+		height: 398px
+		background-color: white
+		z-index: 9999999
+		+r(960)
+			max-width: none
+			width: 95%
+			min-width: 380px
+	.popup__container
+		font-size: 0
+		margin: auto 
+		max-width: 768px
+		padding: 69px 20px 57px
+	[class*="col"], [class^="col"]
+		display: inline-block
+		vertical-align: middle
+	.popup__col2
+		width: 73%
+		+r(650)
+			width: 100%
+	.popup__col1
+		width: 27%
+		+r(650)
+			display: none
+	.icon-logo
+		color: #009d3d
+		font-size: 137px
+	.btn-close
+		position: absolute
+		top: 37px
+		right: 40px
+	.send-form
+		max-width: none
+		padding: 0
+		label
+			font-size: 16px
+			font-style: italic
+	.send-form__header
+		font-size: 24px
+		text-transform: uppercase
+		margin-bottom: 25px
+	.send-form__btn
+		margin-top: 24px
+		font-size: 16px
+		padding: 9px 81px
+.pop
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 999999
+	display: none
+	overflow: auto
+	&.is-active
+		display: block
+	.pop__pic
+		min-width: 1603px
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+		background: rgba(0, 0, 0, .8)
+		img
+			width: 100%
+			display: block
+		.btn-closed
+			display: block
+			position: absolute
+			right: 20px
+			top: 20px

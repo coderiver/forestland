@@ -1,0 +1,40 @@
+.send-form
+	width: 100%
+	max-width: 597px
+	margin: auto
+	background-color: white
+	position: relative
+	padding: 29px 32px 34px
+	+clr
+	+r(500)
+		padding: 25px 20px
+	.send-form__header
+		color: #3e3e3e
+		font: 600 30px/30px "Open Sans", sans-serif
+		margin-bottom: 27px
+		+r(600)
+			font-size: 24px
+			margin-bottom: 20px
+	.send-form__row
+		margin-bottom: 11px
+	label
+		display: block
+		color: #3e3e3e
+		font: 400 18px/1 "Open Sans", sans-serif
+		margin-bottom: 9px
+.send-form__btn
+	padding: 8px 75px
+	background-color: #ee8f01
+	font: 400 18px "Open Sans", sans-serif
+	text-transform: uppercase
+	color: #fff
+	position: relative
+	+tr(all .3s)
+	float: right
+	+r(900)
+		width: 100%
+		float: none
+	&:hover
+		background-color: darken(#ee8f01, 5%)
+	&:active
+		background-color: #ED001A
