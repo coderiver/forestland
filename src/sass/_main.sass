@@ -309,6 +309,22 @@
 			margin-bottom: 15px
 		&:last-child
 			margin-bottom: 0
+.map-wrap
+	position: relative
+	display: block
+	.map-wrap__top
+		position: absolute
+		height: 100px
+		top: 0
+		right: 0
+		left: 0
+		background-color: rgba(241, 145, 0, .8)
+		z-index: 1
+	.title
+		+vcenter
+	.map
+		height: 650px
+		width: 100%
 .plan
 	position: relative
 	img

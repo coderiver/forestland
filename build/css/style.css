@@ -180,6 +180,11 @@ img { max-width: 100%; height: auto; }
 .complex p { font: 600 18px/24px "Open Sans", sans-serif; color: #fff; margin-bottom: 22px; }
 .complex p:last-child { margin-bottom: 0; }
 
+.map-wrap { position: relative; display: block; }
+.map-wrap .map-wrap__top { position: absolute; height: 100px; top: 0; right: 0; left: 0; background-color: rgba(241, 145, 0, 0.8); z-index: 1; }
+.map-wrap .title { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.map-wrap .map { height: 650px; width: 100%; }
+
 .plan { position: relative; }
 .plan img { display: block; }
 .plan .title { position: absolute; top: 3.31579%; left: 0; right: 0; margin: auto; }
