@@ -32,6 +32,8 @@ body
 	font-family: Arial, sans-serif
 	font-size: 12px
 	line-height: 1.2
+	&.is-hidden
+		overflow: hidden
 a
 	text-decoration: none
 img
@@ -128,7 +130,11 @@ $black: #3e3e3e
 	height: 16px
 	background: url(../img/btn-close.png) no-repeat center
 	cursor: pointer
-
+.btn-closed
+	width: 37px
+	height: 37px
+	background: url(../img/closed.jpg) no-repeat center
+	cursor: pointer
 //title
 .title
 	+cult

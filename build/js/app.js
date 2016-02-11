@@ -55,10 +55,17 @@ $(document).ready(function() {
 			.removeClass('is-active');
 	});
 	$(".js-popup").on("click", function(){
-			$(".popup").toggleClass('is-active');
-		});
-
-		$(".js-close").on("click", function(){
-			$(".popup").removeClass('is-active');
-		});
+		$(".popup").addClass('is-active');
+	});
+	$(".js-close").on("click", function(){
+		$(".popup").removeClass('is-active');
+	});
+	$(".js-pop").on("click", function(){
+		$(".pop").addClass('is-active');
+		$("body").addClass('is-hidden');
+	});
+	$(".js-closed").on("click", function(){
+		$(".pop").removeClass('is-active');
+		$("body").removeClass('is-hidden');
+	});
 });

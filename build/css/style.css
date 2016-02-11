@@ -69,6 +69,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .slick-dots button { display: block; width: 10px; height: 10px; background: #fff; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; -webkit-border-radius: 50%; border-radius: 50%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.2; }
+body.is-hidden { overflow: hidden; }
 
 a { text-decoration: none; }
 
@@ -110,6 +111,8 @@ img { max-width: 100%; height: auto; }
 .btn-more:hover, .btn-more:active { background-color: #a11b5d; color: #fff; }
 
 .btn-close { width: 15px; height: 16px; background: url(../img/btn-close.png) no-repeat center; cursor: pointer; }
+
+.btn-closed { width: 37px; height: 37px; background: url(../img/closed.jpg) no-repeat center; cursor: pointer; }
 
 .title { font-family: "Cultbold Bold", sans-serif; text-transform: uppercase; font-size: 48px; color: #fff; text-align: center; letter-spacing: 0.1em; }
 .title.title_black { color: #3e3e3e; }
@@ -176,6 +179,10 @@ img { max-width: 100%; height: auto; }
 .complex .col2 { width: 33%; }
 .complex p { font: 600 18px/24px "Open Sans", sans-serif; color: #fff; margin-bottom: 22px; }
 .complex p:last-child { margin-bottom: 0; }
+
+.plan { position: relative; }
+.plan img { display: block; }
+.plan .title { position: absolute; top: 3.31579%; left: 0; right: 0; margin: auto; }
 
 .odds { position: relative; color: #000; text-align: center; font-size: 0; }
 .odds .odds__in { padding: 50px 20px 20px; }
@@ -314,6 +321,12 @@ img { max-width: 100%; height: auto; }
 .popup .send-form label { font-size: 16px; font-style: italic; }
 .popup .send-form__header { font-size: 24px; text-transform: uppercase; margin-bottom: 25px; }
 .popup .send-form__btn { margin-top: 24px; font-size: 16px; padding: 9px 81px; }
+
+.pop { position: fixed; top: 0; bottom: 0; left: 0; right: 0; margin: auto; padding: 20px; z-index: 999999; display: none; overflow: auto; }
+.pop.is-active { display: block; }
+.pop .pop__pic { min-width: 1603px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; background: rgba(0, 0, 0, 0.8); }
+.pop .pop__pic img { width: 100%; height: 100%; display: block; }
+.pop .pop__pic .btn-closed { display: block; position: absolute; right: 20px; top: 20px; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1660px){
