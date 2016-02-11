@@ -266,47 +266,47 @@
 			font-size: 18px
 		sup
 			vertical-align: top
-	.room__link
-		color: white
-		font: 600 18px "Open Sans", sans-serif 
-		text-align: center
-		position: relative
-		display: inline-block
-		z-index: 1
-		height: 2em //36px / 18px
-		line-height: 2em //36px / 18px
-		&:hover
-			.room__link-bg
-				&:before
-					background: url(../img/room_link-l-hov.png) no-repeat
-					background-size: contain !important
-				&:after
-					background: url(../img/room_link-r-hov.png) no-repeat
-					background-size: contain !important
-		+r(1024)
-			font-size: 16px
-	.room__link-bg
-		position: absolute
+.room__link
+	color: white
+	font: 600 18px "Open Sans", sans-serif 
+	text-align: center
+	position: relative
+	display: inline-block
+	z-index: 1
+	height: 2em //36px / 18px
+	line-height: 2em //36px / 18px
+	&:hover
+		.room__link-bg
+			&:before
+				background: url(../img/room_link-l-hov.png) no-repeat
+				background-size: contain !important
+			&:after
+				background: url(../img/room_link-r-hov.png) no-repeat
+				background-size: contain !important
+	+r(1024)
+		font-size: 16px
+.room__link-bg
+	position: absolute
+	display: block
+	z-index: -1
+	width: 100%
+	height: 100%
+	top: 0
+	&:before, &:after
+		content: ' '
 		display: block
-		z-index: -1
-		width: 100%
-		height: 100%
-		top: 0
-		&:before, &:after
-			content: ' '
-			display: block
-			width: 4.777777777777778em // 86px / 18px
-			height: 2.388888888888889em // 43px / 18px
-			position: absolute
-			left: -1.8888888888888888em // 34px / 18px
-			top: -0.16666666666666666em // -3px / 18px
-			background: url(../img/room_link-l.png) no-repeat
-			background-size: contain
-		&:after
-			left: auto
-			right: -1.8888888888888888em // 34px / 18px
-			background: url(../img/room_link-r.png) no-repeat
-			background-size: contain
+		width: 4.777777777777778em // 86px / 18px
+		height: 2.388888888888889em // 43px / 18px
+		position: absolute
+		left: -1.8888888888888888em // 34px / 18px
+		top: -0.16666666666666666em // -3px / 18px
+		background: url(../img/room_link-l.png) no-repeat
+		background-size: contain
+	&:after
+		left: auto
+		right: -1.8888888888888888em // 34px / 18px
+		background: url(../img/room_link-r.png) no-repeat
+		background-size: contain
 
 .items
 	position: relative
