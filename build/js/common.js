@@ -30,21 +30,35 @@ $(document).ready(function() {
 			.siblings()
 			.removeClass('is-active');
 	});
-	$(".js-popup").on("click", function(){
-		$(".popup").addClass('is-active');
+	$(".js-open-popup").on("click", function(){
+		var link = $(this).data('link');
+		var popup = $('.js-popup[data-popup="' + link + '"]');
+		popup.addClass('is-active');
+		return false;
 	});
 	$(".js-close").on("click", function(){
-		$(".popup").removeClass('is-active');
+		$('.js-popup[data-popup="form"]').removeClass('is-active');
 	});
 	$(window).on('resize', function(){
 		var width = $(window).width()
 		if( width < 1100) {
-			$(".js-pop").on("click", function(){
-				$(".pop").addClass('is-active');
+			// $(".plan").on("click", function(){
+			// 	$(".popup").addClass('is-active');
+			// 	$("body").addClass('is-hidden');
+			// });
+			// $(".js-closed").on("click", function(){
+			// 	$(".popup").removeClass('is-active');
+			// 	$("body").removeClass('is-hidden');
+			// });
+			$(".js-open-popup").on("click", function(){
 				$("body").addClass('is-hidden');
+				var link = $(this).data('link');
+				var popup = $('.js-popup[data-popup="' + link + '"]');
+				popup.addClass('is-active');
+				return false;
 			});
 			$(".js-closed").on("click", function(){
-				$(".pop").removeClass('is-active');
+				$('.js-popup[data-popup="plan"]').removeClass('is-active');
 				$("body").removeClass('is-hidden');
 			});
 		}

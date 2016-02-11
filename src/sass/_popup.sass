@@ -4,10 +4,12 @@
 	right: 0
 	left: 0
 	position: fixed
-	background-color: rgba(0, 100, 39, 0.8)
+	background-color: rgba(0, 0, 0, 0.8)
 	z-index: 999
 	display: none
 	overflow: auto
+	&.popup_green
+		background-color: rgba(0, 100, 39, 0.8)
 	&.is-active
 		display: block
 	.popup__block
@@ -21,6 +23,10 @@
 		height: 398px
 		background-color: white
 		z-index: 9999999
+		.btn-close
+			position: absolute
+			top: 37px
+			right: 40px
 		+r(960)
 			max-width: none
 			width: 95%
@@ -44,10 +50,6 @@
 	.icon-logo
 		color: #009d3d
 		font-size: 137px
-	.btn-close
-		position: absolute
-		top: 37px
-		right: 40px
 	.send-form
 		max-width: none
 		padding: 0
@@ -62,19 +64,7 @@
 		margin-top: 24px
 		font-size: 16px
 		padding: 9px 81px
-.pop
-	position: fixed
-	top: 0
-	bottom: 0
-	left: 0
-	right: 0
-	margin: auto
-	z-index: 999999
-	display: none
-	overflow: auto
-	&.is-active
-		display: block
-	.pop__pic
+	.popup__pic
 		min-width: 1603px
 		position: absolute
 		top: 0
@@ -91,3 +81,4 @@
 			position: absolute
 			right: 20px
 			top: 20px
+

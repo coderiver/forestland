@@ -303,25 +303,23 @@ img { max-width: 100%; height: auto; }
 .footer .footer__list a { text-decoration: underline; font: 400 18px "Open Sans", sans-serif; color: #fff; padding: 0 0 0 55px; background: url(../img/jpg.png) no-repeat left; position: relative; display: inline-block; }
 .footer .footer__list a:hover { text-decoration: none; }
 
-.popup { top: 0; bottom: 0; right: 0; left: 0; position: fixed; background-color: rgba(0, 100, 39, 0.8); z-index: 999; display: none; overflow: auto; }
+.popup { top: 0; bottom: 0; right: 0; left: 0; position: fixed; background-color: rgba(0, 0, 0, 0.8); z-index: 999; display: none; overflow: auto; }
+.popup.popup_green { background-color: rgba(0, 100, 39, 0.8); }
 .popup.is-active { display: block; }
 .popup .popup__block { top: 0; bottom: 0; left: 0; right: 0; margin: auto; position: absolute; max-width: 886px; height: 398px; background-color: white; z-index: 9999999; }
+.popup .popup__block .btn-close { position: absolute; top: 37px; right: 40px; }
 .popup .popup__container { font-size: 0; margin: auto; max-width: 768px; padding: 69px 20px 57px; }
 .popup [class*="col"], .popup [class^="col"] { display: inline-block; vertical-align: middle; }
 .popup .popup__col2 { width: 73%; }
 .popup .popup__col1 { width: 27%; }
 .popup .icon-logo { color: #009d3d; font-size: 137px; }
-.popup .btn-close { position: absolute; top: 37px; right: 40px; }
 .popup .send-form { max-width: none; padding: 0; }
 .popup .send-form label { font-size: 16px; font-style: italic; }
 .popup .send-form__header { font-size: 24px; text-transform: uppercase; margin-bottom: 25px; }
 .popup .send-form__btn { margin-top: 24px; font-size: 16px; padding: 9px 81px; }
-
-.pop { position: fixed; top: 0; bottom: 0; left: 0; right: 0; margin: auto; z-index: 999999; display: none; overflow: auto; }
-.pop.is-active { display: block; }
-.pop .pop__pic { min-width: 1603px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; background: rgba(0, 0, 0, 0.8); }
-.pop .pop__pic img { width: 100%; display: block; }
-.pop .pop__pic .btn-closed { display: block; position: absolute; right: 20px; top: 20px; }
+.popup .popup__pic { min-width: 1603px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; background: rgba(0, 0, 0, 0.8); }
+.popup .popup__pic img { width: 100%; display: block; }
+.popup .popup__pic .btn-closed { display: block; position: absolute; right: 20px; top: 20px; }
 
 .send-form { width: 100%; max-width: 597px; margin: auto; background-color: white; position: relative; padding: 29px 32px 34px; *zoom: 1; }
 .send-form:after { content: " "; display: table; clear: both; }
