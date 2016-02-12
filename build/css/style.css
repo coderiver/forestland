@@ -115,7 +115,7 @@ sub { vertical-align: bottom; }
 .btn-callback span { padding-right: 19px; }
 .btn-callback i, .btn-callback span { vertical-align: middle; }
 
-.btn-more { width: 281px; color: #010101; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn-more { width: 281px; line-height: 62px; color: #010101; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .btn-more:hover, .btn-more:active { background-color: #a11b5d; color: #fff; }
 
 .btn-close { width: 37px; height: 37px; background: url(../img/closed.jpg) no-repeat center; cursor: pointer; }
@@ -334,7 +334,7 @@ sub { vertical-align: bottom; }
 .popup .send-form__btn { margin-top: 24px; font-size: 16px; padding: 9px 81px; }
 .popup .popup__pic { min-width: 1603px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; background: rgba(0, 0, 0, 0.8); }
 .popup .popup__pic img { width: 100%; display: block; }
-.popup .popup__pic .btn-closed { display: block; position: absolute; right: 20px; top: 20px; }
+.popup .popup__pic .btn-close { display: block; position: absolute; right: 20px; top: 20px; }
 .popup .iframe-wrap { position: relative; overflow: hidden; padding-bottom: 50%; position: relative; height: 0; }
 .popup .iframe-wrap iframe { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 
@@ -411,7 +411,7 @@ sub { vertical-align: bottom; }
  .header .header__logo{ left: 20px; } }
 @media only screen and (max-width: 1024px){
  .title{ font-size: 40px; }
- .top .btn-more{ height: 50px; width: 210px; }
+ .top .btn-more{ height: 50px; line-height: 50px; width: 210px; }
  .odds .odds__item{ width: 50%; }
  .odds .odds__name{ font-size: 26px; }
  .room .room__name{ font-size: 20px; }
@@ -441,7 +441,7 @@ sub { vertical-align: bottom; }
  .send-form__btn{ width: 100%; float: none; } }
 @media only screen and (max-width: 768px){
  .title{ font-size: 36px; }
- .top .btn-more{ height: 40px; width: 190px; font-size: 16px; }
+ .top .btn-more{ height: 40px; line-height: 40px; width: 190px; font-size: 16px; }
  .complex .col1{ width: 100%; }
  .complex .col2{ display: none; }
  .room{ padding: 0 10px; width: 50%; }

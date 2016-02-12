@@ -41,6 +41,13 @@ $(document).ready(function() {
 	$('.js-humb').on('click', function() {
 		$('.header__nav-mob').toggleClass('is-visible');
 	});
+	$('.btn-more').on('click', function() {
+		var section = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(section).offset().top - 100
+		}, 500);
+		return false;
+	});
 	//TABS
 	$('.tabs__control-link').on('click', function(e){
 		e.preventDefault();
@@ -66,30 +73,6 @@ $(document).ready(function() {
 		$(this).parents(".js-popup").removeClass('is-active');
 		$("body").removeClass('is-hidden');
 	});
-	// $(window).on('resize', function(){
-	// 	var width = $(window).width()
-	// 	if( width < 1100) {
-	// 		// $(".js-plan").on("click", function(){
-	// 		// 	$("body").addClass('is-hidden');
-	// 		// 	$('.js-popup-plan').addClass('is-active');
-	// 		// });
-	// 		// $(".js-closed").on("click", function(){
-	// 		// 	$(this).parents(".js-plan").removeClass('is-active');
-	// 		// 	$("body").removeClass('is-hidden');
-	// 		// });
-	// 		$(".js-plan").on("click", function(){
-	// 			$("body").addClass('is-hidden');
-	// 			$('.js-popup-plan').addClass('is-active');
-	// 		});
-	// 	}
-	// });
-	$(".js-plan").on("click", function(){
-		var width = $(window).width()
-		if( width < 1100) {
-			$("body").addClass('is-hidden');
-			$('.js-popup-plan').addClass('is-active');
-		}
-	});
 	$(".js-open-popup").on("click", function(){
 		//SLIDER
 		$('.gallery').slick({
@@ -100,11 +83,17 @@ $(document).ready(function() {
 			return '<a>'+(i+1)+'</a>';
 			}
 		});
-		$("body").addClass('is-hidden');
-		var link = $(this).data('link');
-		var popup = $('.js-popup[data-popup="' + link + '"]');
-		popup.addClass('is-active');
-		return false;
+	});
+	$(".js-plan").on("click", function(){
+		var width = $(window).width()
+		if( width < 1100) {
+			$("body").addClass('is-hidden');
+			$('.js-popup-plan').addClass('is-active');
+		}
+	});
+	$(".js-closed").on("click", function(){
+		$(this).parents(".js-popup-plan").removeClass('is-active');
+		$("body").removeClass('is-hidden');
 	});
 	//MAP
 	var map;
