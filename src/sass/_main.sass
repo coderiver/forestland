@@ -168,24 +168,6 @@
 		margin-bottom: 28px
 .tabs
 	position: relative
-	.arrow-left
-		top: 50%
-		left: -110px
-		position: absolute
-		transform: translateY(-50%)
-		+r(1400)
-			left: -80px
-		+r(1350)
-			display: none
-	.arrow-right
-		top: 50%
-		right: -110px
-		position: absolute
-		transform: translateY(-50%)
-		+r(1400)
-			right: -80px
-		+r(1350)
-			display: none
 	.tabs__controls
 		border-bottom: 2px solid #a1185b
 		font-size: 0
@@ -216,27 +198,31 @@
 		font: 600 18px/1 "Open Sans", sans-serif
 		+tr(all .3s)
 	.tabs__list
-		margin: 0 -25px
-		+r(1228)
-			margin-left: 0
-			margin-right: 0
+		+rm(1228)
+			margin: 0 -25px
+		+r(900)
+			margin: 0
 	.tabs__item
 		list-style: none outside none
 		display: none
 		font-size: 0
+		+r(1228)
+			padding: 0 25px
+		+r(1100)
+			padding: 0 10px
+		+r(500)
+			padding: 0
 		&.is-active
 			display: block
 .room
-	display: inline-block
-	vertical-align: top
-	width: 33.3333%
 	margin-bottom: 30px
 	padding: 0 25px
-	+r(768)
+	outline: 0
+	+r(1100)
 		padding: 0 10px
-		width: 50%
+	+r(500)
+		padding: 0 50px
 	+r(400)
-		width: 100%
 		padding: 0 20px
 	figcaption
 		margin-top: 33px
@@ -251,6 +237,8 @@
 			display: inline-block
 			width: 100%
 			max-width: none
+			position: relative
+			z-index: -1
 	.room__name
 		color: white
 		font: 400 24px/1 "Open Sans", sans-serif 
