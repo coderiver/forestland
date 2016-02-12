@@ -10,6 +10,9 @@
 	overflow: auto
 	&.popup_green
 		background-color: rgba(0, 100, 39, 0.8)
+	&.popup_vertical
+		+vertical
+		overflow: visible
 	&.is-active
 		display: block
 	.popup__block
@@ -36,6 +39,14 @@
 		margin: auto 
 		max-width: 768px
 		padding: 69px 20px 57px
+	.popup__in
+		display: inline-block
+		text-align: center
+		vertical-align: middle
+		width: 100%
+		max-width: 1312px
+		.title
+			padding: 0 0 17px
 	[class*="col"], [class^="col"]
 		display: inline-block
 		vertical-align: middle
