@@ -142,9 +142,9 @@ sub { vertical-align: bottom; }
 .arrow-right { width: 0px; height: 0px; border-style: solid; border-width: 35px 0 35px 60px; border-color: transparent transparent transparent #fff; }
 .arrow-right:hover { border-left-color: orange; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
-.out { background: url(../img/bg.jpg) repeat; padding: 0 20px; }
+.out { background: url(../img/bg.jpg) repeat; padding: 0 20px 89px; }
 
-.wrapper { max-width: 1600px; height: 7892px; background-color: white; -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); margin: auto; padding-top: 100px; }
+.wrapper { max-width: 1600px; background-color: white; -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); margin: auto; padding-top: 100px; }
 
 .top { height: -webkit-calc(100vh - 100px); height: calc(100vh - 100px); min-height: 500px; background: url(../img/town.jpg) no-repeat center; padding-top: 31px; position: relative; text-align: center; }
 .top .top__in { padding: 0 30px; }
