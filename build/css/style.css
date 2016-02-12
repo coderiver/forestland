@@ -118,7 +118,7 @@ sub { vertical-align: bottom; }
 .btn-more { width: 281px; color: #010101; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .btn-more:hover, .btn-more:active { background-color: #a11b5d; color: #fff; }
 
-.btn-close { width: 15px; height: 16px; background: url(../img/btn-close.png) no-repeat center; cursor: pointer; }
+.btn-close { width: 37px; height: 37px; background: url(../img/closed.jpg) no-repeat center; cursor: pointer; }
 
 .btn-closed { width: 37px; height: 37px; background: url(../img/closed.jpg) no-repeat center; cursor: pointer; }
 
@@ -319,10 +319,11 @@ sub { vertical-align: bottom; }
 .popup.popup_vertical:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .popup.is-active { display: block; }
 .popup .popup__block { top: 0; bottom: 0; left: 0; right: 0; margin: auto; position: absolute; max-width: 886px; height: 398px; background-color: white; z-index: 9999999; }
-.popup .popup__block .btn-close { position: absolute; top: 37px; right: 40px; }
+.popup .popup__block .btn-close { position: absolute; top: 22px; right: 32px; }
 .popup .popup__container { font-size: 0; margin: auto; max-width: 768px; padding: 69px 20px 57px; }
-.popup .popup__in { display: inline-block; text-align: center; vertical-align: middle; width: 100%; max-width: 1312px; }
+.popup .popup__in { display: inline-block; text-align: center; vertical-align: middle; width: 100%; max-width: 1312px; position: relative; }
 .popup .popup__in .title { padding: 0 0 17px; }
+.popup .popup__in .btn-close { position: absolute; top: 5px; right: 0; }
 .popup [class*="col"], .popup [class^="col"] { display: inline-block; vertical-align: middle; }
 .popup .popup__col2 { width: 73%; }
 .popup .popup__col1 { width: 27%; }
@@ -334,6 +335,8 @@ sub { vertical-align: bottom; }
 .popup .popup__pic { min-width: 1603px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; background: rgba(0, 0, 0, 0.8); }
 .popup .popup__pic img { width: 100%; display: block; }
 .popup .popup__pic .btn-closed { display: block; position: absolute; right: 20px; top: 20px; }
+.popup .iframe-wrap { position: relative; overflow: hidden; padding-bottom: 50%; position: relative; height: 0; }
+.popup .iframe-wrap iframe { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 
 .send-form { width: 100%; max-width: 597px; margin: auto; background-color: white; position: relative; padding: 29px 32px 34px; *zoom: 1; }
 .send-form:after { content: " "; display: table; clear: both; }
@@ -393,6 +396,8 @@ sub { vertical-align: bottom; }
 @media only screen and (max-width: 1350px){
  .tabs .arrow-left{ display: none; }
  .tabs .arrow-right{ display: none; } }
+@media only screen and (max-width: 1320px){
+ .popup .popup__in .btn-close{ right: 1%; } }
 @media only screen and (max-width: 1228px){
  .tabs .tabs__controls{ margin: 0 0 40px; }
  .tabs .tabs__list{ margin-left: 0; margin-right: 0; } }

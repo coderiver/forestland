@@ -69,8 +69,6 @@ $(document).ready(function() {
 	$(".js-open-popup").on("click", function(){
 		//SLIDER
 		$('.gallery').slick({
-			autoplay: true,
-			autoplaySpeed: 8000,
 			slidesToShow: 1,
 			dots: true,
 			customPaging : function(slider, i) {
