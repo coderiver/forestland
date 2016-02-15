@@ -489,28 +489,28 @@
 					<div class="tel tel_black">(098) 0 5555 00</div>
 				</div>
 				<div class="col2">
-					<form action="" class="send-form">
+					<form action="" class="send-form js-validate" method="GET">
 						<h2 class="send-form__header">
 							Остались вопросы? <br>
 							Напишите нам
 						</h2>
 						<div class="send-form__row">
 							<label for="">Имя</label>
-							<input type="text" class="input" placeholder="Введите свое имя">
+							<input type="text" class="input" data-validation="required" placeholder="Введите свое имя">
 						</div>
 						<div class="send-form__row">
 							<label for="">E-mail</label>
-							<input type="text" class="input" placeholder="Введите свой E-mail">
+							<input type="text" class="input" data-validation="email" placeholder="Введите свой E-mail">
 						</div>
 						<div class="send-form__row" style="display: none">
 							<label for="">Телефон</label>
-							<input type="text" class="input" placeholder="Введите свой телефон">
+							<input type="tel" class="input" placeholder="Введите свой телефон">
 						</div>
 						<div class="send-form__row">
-							<label for="">E-mail</label>
+							<label for="">Вопрос</label>
 							<textarea name="text-field" class="input input-field" placeholder="Ваш вопрос"></textarea>
 						</div>
-						<button type="button" class="send-form__btn">отправить</button>
+						<button type="submit" class="send-form__btn">отправить</button>
 					</form>
 				</div>
 				<div class="run">
@@ -567,19 +567,19 @@
 		<div class="popup__container">
 			<div class="popup__col1"><i class="icon-logo"></i></div>
 			<div class="popup__col2">
-				<form action="" class="send-form">
+				<form action="" class="send-form js-validate" method="GET">
 					<h2 class="send-form__header">
 						Заказать обратную связь
 					</h2>
 					<div class="send-form__row">
 						<label for="">Имя</label>
-						<input type="text" class="input" placeholder="Введите свое имя">
+						<input type="text" class="input" placeholder="Введите свое имя" data-validation="required">
 					</div>
 					<div class="send-form__row">
 						<label for="">Телефон</label>
-						<input type="text" class="input" placeholder="Введите свой телефон">
+						<input type="tel" class="input" placeholder="Введите свой телефон" data-validation="required">
 					</div>
-					<button type="button" class="send-form__btn">отправить</button>
+					<button type="submit" class="send-form__btn">отправить</button>
 				</form>
 			</div>
 		</div>
@@ -591,30 +591,28 @@
 	<div class="popup__block">
 		<button type="button" class="btn-close js-close"></button>
 		<div class="popup__container">
-			<div class="popup__transfer">
-				<form action="" class="send-form">
-					<h2 class="send-form__header">
-						Заказать трансфер
-					</h2>
-					<div class="send-form__row">
-						<label for="">Имя</label>
-						<input type="text" class="input" placeholder="Введите свое имя">
-					</div>
-					<div class="send-form__row">
-						<label for="">Телефон</label>
-						<input type="text" class="input" placeholder="Введите свой телефон">
-					</div>
-					<div class="send-form__row">
-						<label for="">E-mail</label>
-						<input type="text" class="input" placeholder="Введите свой E-mail">
-					</div>
-					<div class="send-form__row">
-						<label for="">Коментарии</label>
-						<textarea name="text-field" class="input input-field" placeholder="Коментарии"></textarea>
-					</div>
-					<button type="button" class="send-form__btn">отправить</button>
-				</form>
-			</div>
+			<form action="" class="send-form js-validate" method="GET">
+				<h2 class="send-form__header">
+					Заказать трансфер
+				</h2>
+				<div class="send-form__row">
+					<label for="">Имя</label>
+					<input type="text" class="input" placeholder="Введите свое имя" data-validation="required">
+				</div>
+				<div class="send-form__row">
+					<label for="">Телефон</label>
+					<input type="tel" class="input" placeholder="Введите свой телефон" data-validation="required">
+				</div>
+				<div class="send-form__row">
+					<label for="">E-mail</label>
+					<input type="text" name="email" class="input" placeholder="Введите свой E-mail" data-validation="email">
+				</div>
+				<div class="send-form__row">
+					<label for="">Коментарии</label>
+					<textarea name="text-field" class="input input-field" placeholder="Коментарии"></textarea>
+				</div>
+				<button type="submit" class="send-form__btn">отправить</button>
+			</form>
 		</div>
 	</div>
 </div>
@@ -674,5 +672,6 @@
 <!-- load scripts -->
 <!-- google maps -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.23"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.2.8/jquery.form-validator.min.js"></script>
 </body>
 </html>

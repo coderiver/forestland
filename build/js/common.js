@@ -46,6 +46,17 @@ $(document).ready(function() {
 		}, 500);
 		return false;
 	});
+	//mask
+	$('[type="tel"]').mask("+99 (999) 999 - 99 - 99");
+	//validate
+	var validateForm = $('.js-validate');
+
+	validateForm.each(function() {
+		var thisForm = $(this);
+		$.validate({
+			form: thisForm
+		});
+	});
 	//TABS
 	$('.tabs__control-link').on('click', function(e){
 		e.preventDefault();
@@ -72,13 +83,6 @@ $(document).ready(function() {
 		var link = $(this).data('link');
 		var popup = $('.js-popup[data-popup="' + link + '"]');
 		popup.addClass('is-active');
-		return false;
-	});
-	$(".js-close").on("click", function(){
-		$(this).parents(".js-popup").removeClass('is-active');
-		$("body").removeClass('is-hidden');
-	});
-	$(".js-open-popup").on("click", function(){
 		//SLIDER
 		$('.gallery').slick({
 			slidesToShow: 1,
@@ -88,6 +92,12 @@ $(document).ready(function() {
 			return '<a>'+(i+1)+'</a>';
 			}
 		});
+		return false;
+	});
+	$(".js-close").on("click", function(){
+		$(this).parents(".js-popup").removeClass('is-active');
+		$('.gallery').slick('unslick');
+		$("body").removeClass('is-hidden');
 	});
 	$(".js-plan").on("click", function(){
 		var width = $(window).width()
