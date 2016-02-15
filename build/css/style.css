@@ -449,6 +449,8 @@ sub { vertical-align: bottom; }
  .header .header__tel .tel{ font-size: 24px; }
  .header .btn-callback{ font-size: 14px; }
  .send-form__btn{ width: 100%; float: none; } }
+@media only screen and (max-width: 800px){
+ .popup .popup__block .btn-close{ right: 12px; } }
 @media only screen and (max-width: 768px){
  .title{ font-size: 36px; }
  .top .btn-more{ height: 40px; line-height: 40px; width: 190px; font-size: 16px; }
