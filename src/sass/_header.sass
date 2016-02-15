@@ -1,19 +1,22 @@
+.header-wrp
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	padding: 0 20px
+	z-index: 999
+	+r(900)
+		padding: 0
+	+rh(500)
+		position: absolute
 .header
 	height: 100px
 	line-height: 100px
 	background-color: $green
-	position: fixed
-	top: 0
-	left: 20px
-	right: 20px
 	margin: auto
 	max-width: 1600px
 	z-index: 999
-	+r(900)
-		left: 0
-		right: 0
-	+rh(500)
-		position: absolute
+	position: relative
 	.header__tel
 		position: absolute
 		top: 16px
@@ -50,6 +53,7 @@
 			top: 44px
 			transform: translateY(0)
 			height: 50px
+			line-height: 44px
 			right: 100px
 		+r(1200)
 			font-size: 16px
@@ -62,6 +66,7 @@
 		+r(768)
 			font-size: 12px
 			height: 40px
+			line-height: 36px
 			right: 80px
 			i
 				display: none
