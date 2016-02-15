@@ -470,7 +470,7 @@
 						</p>
 					</div>
 				</div>
-				<a href="#" class="transfer__link">
+				<a href="#" class="transfer__link js-open-popup" data-link="buy">
 					заказать
 					<div class="transfer__bg"></div>
 				</a>
@@ -561,7 +561,7 @@
 </div>
 <!-- END out-->
 <!-- BEGIN popup -->
-<div class="popup popup_green js-popup" data-popup="form">
+<div class="popup popup_green popup_vertical js-popup" data-popup="form">
 	<div class="popup__block">
 		<button type="button" class="btn-close js-close"></button>
 		<div class="popup__container">
@@ -587,13 +587,46 @@
 </div>
 <!-- END popup -->
 <!-- BEGIN popup -->
+<div class="popup popup_vertical js-popup" data-popup="buy">
+	<div class="popup__block">
+		<button type="button" class="btn-close js-close"></button>
+		<div class="popup__container">
+			<div class="popup__transfer">
+				<form action="" class="send-form">
+					<h2 class="send-form__header">
+						Заказать трансфер
+					</h2>
+					<div class="send-form__row">
+						<label for="">Имя</label>
+						<input type="text" class="input" placeholder="Введите свое имя">
+					</div>
+					<div class="send-form__row">
+						<label for="">Телефон</label>
+						<input type="text" class="input" placeholder="Введите свой телефон">
+					</div>
+					<div class="send-form__row">
+						<label for="">E-mail</label>
+						<input type="text" class="input" placeholder="Введите свой E-mail">
+					</div>
+					<div class="send-form__row">
+						<label for="">Коментарии</label>
+						<textarea name="text-field" class="input input-field" placeholder="Коментарии"></textarea>
+					</div>
+					<button type="button" class="send-form__btn">отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END popup -->
+<!-- BEGIN popup -->
 <div class="popup js-popup-plan">
 	<div class="popup__pic">
 		<img src="img/genplan.jpg">
 		<button type="button" class="btn-close js-closed"></button>
 	</div>
 </div>
-<!-- END pop -->
+<!-- END popup -->
 <!-- BEGIN popup -->
 <div class="popup popup_vertical js-popup" data-popup="gallery">
 	<div class="popup__in">
@@ -607,7 +640,7 @@
 		</div>
 	</div>
 </div>
-<!-- END pop -->
+<!-- END popup -->
 <!-- BEGIN popup -->
 <div class="popup popup_vertical js-popup" data-popup="video">
 	<div class="popup__in">
@@ -637,7 +670,7 @@
 		</div>
 	</div>
 </div>
-<!-- END pop -->
+<!-- END popup -->
 <!-- load scripts -->
 <!-- google maps -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.23"></script>
