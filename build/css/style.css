@@ -338,8 +338,8 @@ sub { vertical-align: bottom; }
 
 .popup__container { font-size: 0; margin: auto; max-width: 768px; padding: 69px 20px 57px; }
 
-.popup__in { display: inline-block; text-align: center; vertical-align: middle; width: 100%; max-width: 1312px; position: relative; }
-.popup__in .title { padding: 0 0 17px; }
+.popup__in { display: inline-block; text-align: center; vertical-align: middle; width: 100%; max-width: 1312px; position: relative; max-height: 100vh; padding: 70px 0; }
+.popup__in .title { padding: 0 0 17px; position: absolute; left: 0; right: 0; top: 0; }
 .popup__in .btn-close { position: absolute; top: 5px; right: 0; }
 
 .popup__pic { min-width: 1603px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; background: rgba(0, 0, 0, 0.8); }
