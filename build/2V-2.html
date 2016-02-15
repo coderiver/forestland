@@ -178,5 +178,33 @@
 	</div>
 </div>
 <!-- END out-->
+<!-- BEGIN popup -->
+<div class="popup popup_green popup_vertical js-popup" data-popup="form">
+	<div class="popup__block">
+		<button type="button" class="btn-close js-close"></button>
+		<div class="popup__container">
+			<div class="popup__col1"><i class="icon-logo"></i></div>
+			<div class="popup__col2">
+				<form action="" class="send-form js-validate" method="GET">
+					<h2 class="send-form__header">
+						Заказать обратную связь
+					</h2>
+					<div class="send-form__row">
+						<label for="">Имя</label>
+						<input type="text" class="input" placeholder="Введите свое имя" data-validation="required">
+					</div>
+					<div class="send-form__row">
+						<label for="">Телефон</label>
+						<input type="tel" class="input" placeholder="Введите свой телефон" data-validation="required">
+					</div>
+					<button type="submit" class="send-form__btn">отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END popup -->
+<!-- validate -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.2.8/jquery.form-validator.min.js"></script>
 </body>
 </html>
