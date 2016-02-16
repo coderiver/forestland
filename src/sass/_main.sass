@@ -323,6 +323,7 @@
 			top: 0
 			bottom: 0
 			z-index: 1
+			+tr(transform 0.4s ease)
 			+r(768)
 				width: 70%
 				height: 100px
@@ -339,6 +340,8 @@
 		+tr(all 0.4s ease)
 		&:hover
 			+scale(1.07)
+			.item__link
+				+scale(0.93)
 		+r(768)
 			height: 250px
 		+r(600)
@@ -358,6 +361,8 @@
 		+tr(all 0.4s ease)
 		&:hover
 			+scale(1.07)
+			.item__link
+				+scale(0.93)
 		+r(768)
 			height: 250px
 		+r(600)
@@ -595,6 +600,7 @@
 				padding-right: 0
 				width: 100%
 				margin-bottom: 20px
+				text-align: center
 		p
 			color: #646464
 			font: 600 18px "Open Sans", sans-serif
@@ -609,6 +615,11 @@
 				margin-bottom: 10px
 			+r(600)
 				font-size: 20px
+		.run__text
+			text-align: left
+			display: inline-block
+			max-width: 437px
+			width: 100%
 		.run__time
 			color: #3e3e3e
 			font: 700 18px/1 "Open Sans", sans-serif
