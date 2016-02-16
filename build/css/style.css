@@ -120,9 +120,7 @@ sub { vertical-align: bottom; }
 .btn-more { width: 281px; line-height: 62px; color: #010101; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .btn-more:hover, .btn-more:active { background-color: #a11b5d; color: #fff; }
 
-.btn-close { width: 37px; height: 37px; background: url(../img/closed.jpg) no-repeat center; cursor: pointer; }
-
-.btn-closed { width: 37px; height: 37px; background: url(../img/closed.jpg) no-repeat center; cursor: pointer; }
+.btn-close { width: 37px; height: 37px; background: url(../img/closed.jpg) no-repeat center; cursor: pointer; z-index: 10; }
 
 .title { font-family: "Cultbold Bold", sans-serif; text-transform: uppercase; font-size: 48px; color: #fff; text-align: center; letter-spacing: 0.1em; }
 .title.title_black { color: #3e3e3e; }
@@ -146,8 +144,8 @@ sub { vertical-align: bottom; }
 
 .wrapper { max-width: 1600px; background-color: white; -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); margin: auto; padding-top: 100px; }
 
-.top { height: -webkit-calc(100vh - 100px); height: calc(100vh - 100px); min-height: 500px; background: url(../img/town.jpg) no-repeat center; padding-top: 31px; position: relative; text-align: center; }
-.top .top__in { padding: 0 30px; }
+.top { background: url(../img/town.jpg) no-repeat center; }
+.top .top__in { padding: 31px 30px 0; height: -webkit-calc(100vh - 100px); height: calc(100vh - 100px); min-height: 320px; position: relative; text-align: center; }
 .top .top__title { left: 0; right: 0; margin: auto; top: 33px; position: absolute; font: 0/0 a; text-shadow: none; color: transparent; }
 .top .btn-more { display: inline-block; position: absolute; bottom: 98px; left: 0; right: 0; margin: auto; }
 
@@ -448,6 +446,8 @@ sub { vertical-align: bottom; }
  .header .header__tel .tel{ font-size: 24px; }
  .header .btn-callback{ font-size: 14px; }
  .send-form__btn{ width: 100%; float: none; } }
+@media only screen and (max-height: 800px){
+ .top .btn-more{ bottom: 12.25%; } }
 @media only screen and (max-width: 800px){
  .popup .popup__block .btn-close{ right: 12px; } }
 @media only screen and (max-width: 768px){
@@ -503,8 +503,6 @@ sub { vertical-align: bottom; }
 @media only screen and (max-width: 560px){
  .footer .footer__col{ width: 100%; }
  .footer .footer__col.footer__col_centr{ text-align: left; } }
-@media only screen and (max-height: 500px){
- .header-wrp{ position: absolute; } }
 @media only screen and (max-width: 500px){
  .top .btn-more{ width: 175px; font-size: 14px; }
  .tabs .tabs__item{ padding: 0; }
@@ -518,6 +516,8 @@ sub { vertical-align: bottom; }
  .header .header__logo .logo{ font-size: 60px; }
  .humb{ margin-left: 10px; margin-right: 15px; }
  .send-form{ padding: 25px 20px; } }
+@media only screen and (max-height: 500px){
+ .header-wrp{ position: absolute; } }
 @media only screen and (max-width: 480px){
  .about .about__link{ font-size: 1.1em; } }
 @media only screen and (max-width: 400px){
