@@ -305,16 +305,12 @@
 	.item
 		display: inline-block
 		vertical-align: top
-		height: 300px
 		width: 50%
 		text-align: center
 		position: relative
+		overflow: hidden
 		+r(1365)
 			width: 100%
-		+r(768)
-			height: 250px
-		+r(600)
-			height: 200px
 		.item__link
 			width: 648px
 			height: 192px
@@ -339,6 +335,14 @@
 	.item_left
 		background: url(../img/item-left.jpg) no-repeat center
 		background-size: cover
+		height: 300px
+		+tr(all 0.4s ease)
+		&:hover
+			+scale(1.07)
+		+r(768)
+			height: 250px
+		+r(600)
+			height: 200px
 		.item__link
 			background: url(../img/item__link-left.png) no-repeat
 			+r(768)
@@ -350,6 +354,14 @@
 	.item_right
 		background: url(../img/item-right.jpg) no-repeat center
 		background-size: cover
+		height: 300px
+		+tr(all 0.4s ease)
+		&:hover
+			+scale(1.07)
+		+r(768)
+			height: 250px
+		+r(600)
+			height: 200px
 		.item__link
 			background: url(../img/item__link-right.png) no-repeat
 			+r(768)

@@ -208,12 +208,14 @@ sub { vertical-align: bottom; }
 .room__link-bg:after { left: auto; right: -1.88889em; background: url(../img/room_link-r.png) no-repeat; background-size: contain; }
 
 .items { position: relative; font-size: 0; }
-.items .item { display: inline-block; vertical-align: top; height: 300px; width: 50%; text-align: center; position: relative; }
+.items .item { display: inline-block; vertical-align: top; width: 50%; text-align: center; position: relative; overflow: hidden; }
 .items .item .item__link { width: 648px; height: 192px; margin: auto; background-size: contain !important; display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 1; }
-.items .item_left { background: url(../img/item-left.jpg) no-repeat center; background-size: cover; }
+.items .item_left { background: url(../img/item-left.jpg) no-repeat center; background-size: cover; height: 300px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
+.items .item_left:hover { -webkit-transform: scale(1.07); -ms-transform: scale(1.07); transform: scale(1.07); }
 .items .item_left .item__link { background: url(../img/item__link-left.png) no-repeat; }
 .items .item_left .item__link:hover { background: url(../img/item__link-left-h.png) no-repeat; }
-.items .item_right { background: url(../img/item-right.jpg) no-repeat center; background-size: cover; }
+.items .item_right { background: url(../img/item-right.jpg) no-repeat center; background-size: cover; height: 300px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
+.items .item_right:hover { -webkit-transform: scale(1.07); -ms-transform: scale(1.07); transform: scale(1.07); }
 .items .item_right .item__link { background: url(../img/item__link-right.png) no-repeat; }
 .items .item_right .item__link:hover { background: url(../img/item__link-right-h.png) no-repeat; }
 .items .title { line-height: 1; margin: 55px 0 7px; }
@@ -446,10 +448,10 @@ sub { vertical-align: bottom; }
  .header .header__tel .tel{ font-size: 24px; }
  .header .btn-callback{ font-size: 14px; }
  .send-form__btn{ width: 100%; float: none; } }
-@media only screen and (max-height: 800px){
- .top .btn-more{ bottom: 12.25%; } }
 @media only screen and (max-width: 800px){
  .popup .popup__block .btn-close{ right: 12px; } }
+@media only screen and (max-height: 800px){
+ .top .btn-more{ bottom: 12.25%; } }
 @media only screen and (max-width: 768px){
  .title{ font-size: 36px; }
  .top .btn-more{ height: 40px; line-height: 40px; width: 190px; font-size: 16px; }
@@ -457,10 +459,11 @@ sub { vertical-align: bottom; }
  .complex .col2{ display: none; }
  .room .room__name{ font-size: 18px; }
  .room .room__sub{ font-size: 18px; }
- .items .item{ height: 250px; }
  .items .item .item__link{ width: 70%; height: 100px; padding: 20px; }
+ .items .item_left{ height: 250px; }
  .items .item_left .item__link{ background: #009BDD; }
  .items .item_left .item__link:hover{ background: #F28F1D; }
+ .items .item_right{ height: 250px; }
  .items .item_right .item__link{ background: #009BDD; }
  .items .item_right .item__link:hover{ background: #F28F1D; }
  .items .title{ margin: 0 auto 5px; }
@@ -487,8 +490,9 @@ sub { vertical-align: bottom; }
  .odds .odds__pic{ height: auto; margin-bottom: 20px; }
  .odds .odds__name{ font-size: 22px; margin-bottom: 10px; }
  .odds .odds__text{ font-size: 16px; }
- .items .item{ height: 200px; }
  .items .item .item__link{ width: 80%; }
+ .items .item_left{ height: 200px; }
+ .items .item_right{ height: 200px; }
  .items span{ font-size: 20px; }
  .about p{ font-size: 16px; }
  .transfer .transfer__in{ padding: 40px 20px 40px; }
@@ -516,8 +520,6 @@ sub { vertical-align: bottom; }
  .header .header__logo .logo{ font-size: 60px; }
  .humb{ margin-left: 10px; margin-right: 15px; }
  .send-form{ padding: 25px 20px; } }
-@media only screen and (max-height: 500px){
- .header-wrp{ position: absolute; } }
 @media only screen and (max-width: 480px){
  .about .about__link{ font-size: 1.1em; } }
 @media only screen and (max-width: 400px){

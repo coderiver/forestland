@@ -75,6 +75,22 @@ $(document).ready(function() {
 		$('.slider-room').slick({
 			arrows: true,
 			slidesToShow: 3,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					}
+				},
+				{
+					breakpoint: 500,
+					settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					}
+				},
+			 ]
 		});
 	});
 	$(".js-open-popup").on("click", function(){
