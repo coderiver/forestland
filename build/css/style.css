@@ -291,9 +291,12 @@ sub { vertical-align: bottom; }
 .header__nav a .nav__left, .header__nav a .nav__right { position: absolute; top: 50%; margin-top: -1.44444em; height: 2.88889em; background: url(../img/nav__left.png) no-repeat; left: -2.44444em; margin-left: 1.33333em; width: 2.44444em; display: none; z-index: -1; }
 .header__nav a .nav__right { left: auto; right: -2.44444em; margin-right: 1.22222em; background: url(../img/nav__right.png) no-repeat; }
 
-.header__nav-mob li { display: block; padding: 4px 10px; text-align: center; border-bottom: 1px solid #ccc; background-color: #fff; -webkit-transition: all 0.3s; transition: all 0.3s; }
-.header__nav-mob li:focus, .header__nav-mob li:hover { background-color: #CEE0F7; }
-.header__nav-mob li a { display: block; color: black; font-family: "Open Sans", sans-serif; font-size: 18px; font-weight: 600; text-transform: uppercase; line-height: 1.2; }
+.header__nav-mob { position: fixed; top: 0; bottom: 0; z-index: 999; right: -100%; background-color: #93c01f; -webkit-transition: all 0.6s ease; transition: all 0.6s ease; overflow: auto; }
+.header__nav-mob.is-visible { right: 0; }
+.header__nav-mob ul { width: 300px; }
+.header__nav-mob li { text-align: center; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.header__nav-mob li:focus, .header__nav-mob li:hover { background-color: #82aa1b; }
+.header__nav-mob li a { display: block; color: white; padding: 15px 10px; font-family: "Open Sans", sans-serif; font-size: 18px; font-weight: 600; text-transform: uppercase; line-height: 1.2; }
 
 .humb { display: none; position: relative; float: left; width: 30px; margin: 37px 0 37px 140px; padding: 11px 0; background: none; }
 .humb span { display: block; height: 4px; background: #fff; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
@@ -453,6 +456,8 @@ sub { vertical-align: bottom; }
  .header .header__tel .tel{ font-size: 24px; }
  .header .btn-callback{ font-size: 14px; }
  .send-form__btn{ width: 100%; float: none; } }
+@media only screen and (min-width: 900px){
+ .header__nav-mob.is-visible{ margin-right: 20px; } }
 @media only screen and (max-width: 800px){
  .popup .popup__block .btn-close{ right: 12px; } }
 @media only screen and (max-height: 800px){

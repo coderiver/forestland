@@ -36,9 +36,9 @@ $(document).ready(function() {
 			}
 		}
 	});
-	// $('.js-humb').on('click', function() {
-	// 	$('.header__nav-mob').toggleClass('is-visible');
-	// });
+	$('.js-humb').on('click', function() {
+		$('.header__nav-mob').toggleClass('is-visible');
+	});
 	$('.btn-more, .header__nav-mob a, .header__nav a').on('click', function(e) {
 		e.preventDefault();
 		var section = $(this).attr('href');

@@ -160,26 +160,31 @@
 			margin-right: 1.2222222222222223em // 22px / 18px
 			background: url(../img/nav__right.png) no-repeat
 .header__nav-mob
-	// position: absolute
-	// top: 100%
-	// z-index: 100
-	// left: 0
-	// right: 0
-	// display: none
-	// &.is-visible
-	// 	display: block
+	position: fixed
+	top: 0
+	bottom: 0
+	z-index: 999
+	right: -100%
+	background-color: $green
+	+tr(all 0.6s ease)
+	overflow: auto
+	&.is-visible
+		right: 0
+		+rm(900)
+			margin-right: 20px
+	ul
+		width: 300px
 	li
-		display: block
-		padding: 4px 10px
 		text-align: center
-		border-bottom: 1px solid #ccc
-		background-color: #fff
+		// border-bottom: 1px solid #ccc
 		+tr(all .3s)
 		&:focus, &:hover
-			background-color: #CEE0F7
+			// background-color: #CEE0F7
+			background-color: darken(#93C01F, 5%)
 		a
 			display: block
-			color: black
+			color: white
+			padding: 15px 10px
 			font-family: "Open Sans", sans-serif
 			font-size: 18px
 			font-weight: 600
