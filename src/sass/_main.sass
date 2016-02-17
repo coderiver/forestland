@@ -26,7 +26,24 @@
 		top: 33px
 		position: absolute
 		+hide-text
-		
+		text-transform: uppercase
+		+r(768)
+			background-color: #A31D5E
+			font: 40px/1.2 "Cultbold Bold", sans-serif
+			color: #f5d400
+			letter-spacing: 0.1em
+			position: relative
+			top: auto
+			left: auto
+			right: auto
+			padding: 10px 37px
+		+r(650)
+			font-size: 34px
+		+r(500)
+			font-size: 28px
+		img
+			+r(768)
+				display: none
 	.btn-more
 		display: inline-block
 		position: absolute
