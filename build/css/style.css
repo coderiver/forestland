@@ -130,6 +130,7 @@ sub { vertical-align: bottom; }
 .title.title_yellow { color: #ffdd00; }
 .title.title_yellow-next { color: #f9d800; }
 .title.title_orange { color: #f7921e; }
+.title .add-letter { font-size: 76px; }
 
 .input { background-color: whitesmoke; border: 1px solid darkgrey; display: inline-block; width: 100%; color: darkgrey; font: italic 18px "Open Sans", sans-serif; padding: 7px 16px; }
 
@@ -140,6 +141,8 @@ sub { vertical-align: bottom; }
 
 .arrow-right { width: 0px; height: 0px; border-style: solid; border-width: 35px 0 35px 60px; border-color: transparent transparent transparent #fff; }
 .arrow-right:hover { border-left-color: orange; -webkit-transition: all 0.3s; transition: all 0.3s; }
+
+.add-letter { text-transform: lowercase; line-height: 1; }
 
 .out { background: url(../img/bg.jpg) repeat; padding: 0 20px 89px; min-width: 300px; }
 
@@ -176,6 +179,8 @@ sub { vertical-align: bottom; }
 .odds .odds__pic:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .odds .odds__pic i { vertical-align: middle; }
 .odds .odds__name { font-family: "Cultbold Bold", sans-serif; font-size: 30px; color: #3e3e3e; margin-bottom: 20px; text-transform: uppercase; line-height: 1; }
+.odds .odds__name.odds__name_tspace { margin-top: -10px; }
+.odds .odds__name .add-letter { font-size: 43px; }
 .odds .odds__text { font: 600 18px "Open Sans", sans-serif; max-width: 430px; margin: auto; color: #3e3e3e; line-height: 1.45; }
 
 .layout { background-color: #93c01f; }
@@ -244,8 +249,8 @@ sub { vertical-align: bottom; }
 
 .transfer { position: relative; background-color: #039edf; text-align: center; }
 .transfer .transfer__in { padding: 96px 20px 92px; max-width: 1120px; margin: auto; }
-.transfer .title { margin-bottom: 32px; position: relative; }
-.transfer .title i { position: absolute; right: 0; top: -44px; }
+.transfer .title { margin: -17px 0 32px; position: relative; }
+.transfer .title i { position: absolute; right: 0; top: -28px; }
 .transfer .transfer__container { font-size: 0; clear: both; }
 .transfer [class^="col"], .transfer [class*="col"] { display: inline-block; vertical-align: top; width: 50%; padding: 0 20px; margin-bottom: 28px; text-align: left; }
 .transfer p { font: 600 18px "Open Sans", sans-serif; color: #fff; }
@@ -434,8 +439,10 @@ sub { vertical-align: bottom; }
  .room{ padding: 0 10px; } }
 @media only screen and (max-width: 1024px){
  .title{ font-size: 40px; }
+ .title .add-letter{ font-size: 63px; }
  .top .btn-more{ height: 50px; line-height: 50px; width: 210px; }
  .odds .odds__item{ width: 50%; }
+ .odds .odds__name.odds__name_tspace{ margin-top: -14px; }
  .odds .odds__name{ font-size: 26px; }
  .room .room__name{ font-size: 20px; }
  .room .room__sub{ font-size: 20px; }
@@ -470,6 +477,7 @@ sub { vertical-align: bottom; }
  .popup .popup__block .btn-close{ right: 12px; } }
 @media only screen and (max-width: 768px){
  .title{ font-size: 36px; }
+ .title .add-letter{ font-size: 57px; }
  .top .top__title{ background-color: #A31D5E; font: 40px/1.2 "Cultbold Bold", sans-serif; color: #f5d400; letter-spacing: 0.1em; position: relative; top: auto; left: auto; right: auto; padding: 10px 37px; }
  .top .top__title img{ display: none; }
  .top .btn-more{ height: 40px; line-height: 40px; width: 190px; font-size: 16px; }
@@ -503,6 +511,7 @@ sub { vertical-align: bottom; }
  .about .col1{ float: none; width: 100%; margin-bottom: 15px; text-align: center; } }
 @media only screen and (max-width: 600px){
  .title{ font-size: 30px; letter-spacing: 0.01em; }
+ .title .add-letter{ font-size: 46px; }
  .complex p{ font-size: 16px; margin-bottom: 15px; }
  .odds .odds__wrp{ margin: 0 -20px; }
  .odds .odds__pic{ height: auto; margin-bottom: 20px; }

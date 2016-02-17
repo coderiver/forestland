@@ -169,7 +169,15 @@ $black: #3e3e3e
 	+r(600)
 		font-size: 30px
 		letter-spacing: 0.01em
-
+	.add-letter
+		font-size: 76px
+		+r(1024)
+			font-size: 63px
+		+r(768)
+			font-size: 57px
+		+r(600)
+			font-size: 46px
+		
 //input
 .input
 	background-color: whitesmoke
@@ -193,3 +201,7 @@ $black: #3e3e3e
 	&:hover
 		border-left-color: orange
 		+tr(all 0.3s)
+//letter
+.add-letter
+	text-transform: lowercase
+	line-height: 1
