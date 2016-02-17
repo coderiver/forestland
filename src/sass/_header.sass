@@ -21,10 +21,9 @@
 		right: 42px
 		+r(1365)
 			top: 0
-			right: 112px
+			right: 20px
 		+r(1200)
 			top: 5px
-			right: 103px
 			.tel
 				font-size: 30px
 		+r(900)
@@ -33,11 +32,9 @@
 				font-size: 24px
 		+r(768)
 			top: 14px
-			right: 83px
 			.tel
 				font-size: 18px
 		+r(500)
-			right: 68px
 			top: 19px
 			.tel
 				font-size: 14px
@@ -52,7 +49,7 @@
 			transform: translateY(0)
 			height: 50px
 			line-height: 44px
-			right: 100px
+			right: 18px
 		+r(1200)
 			font-size: 16px
 			span
@@ -65,13 +62,11 @@
 			font-size: 12px
 			height: 40px
 			line-height: 36px
-			right: 80px
 			i
 				display: none
 		+r(500)
 			font-size: 10px
 			padding: 0 6px
-			right: 65px
 	.header__logo
 		position: absolute
 		top: 50%
@@ -159,7 +154,7 @@
 			right: -2.4444444444444446em // 44px / 18px
 			margin-right: 1.2222222222222223em // 22px / 18px
 			background: url(../img/nav__right.png) no-repeat
-.header__nav-mob
+.mobile-nav
 	position: fixed
 	top: 0
 	bottom: 0
@@ -167,20 +162,22 @@
 	right: -100%
 	background-color: $green
 	+tr(all 0.6s ease)
-	overflow: auto
+	overflow-y: auto
+	padding: 50px 0
 	&.is-visible
 		right: 0
-		+rm(900)
-			margin-right: 20px
 	ul
 		width: 300px
 	li
 		text-align: center
-		// border-bottom: 1px solid #ccc
+		border-left: 3px solid transparent
+		border-right: 3px solid transparent
 		+tr(all .3s)
 		&:focus, &:hover
 			// background-color: #CEE0F7
 			background-color: darken(#93C01F, 5%)
+			border-left-color: #fff
+			border-right-color: #fff
 		a
 			display: block
 			color: white
@@ -190,22 +187,24 @@
 			font-weight: 600
 			text-transform: uppercase
 			line-height: 1.2
+	.btn-close
+		position: absolute
+		top: 7px
+		right: 15px
 .humb
 	display: none
 	position: relative
 	float: left
 	width: 30px
-	margin: 37px 0 37px 140px
+	margin: 37px 0 37px 120px
 	padding: 11px 0
 	background: none
 	+r(1365)
 		display: block
-	+r(768)
-		margin-left: 20px
-		margin-right: 20px
 	+r(500)
-		margin-left: 10px
-		margin-right: 15px
+		margin: 37px 0 37px 110px
+	+r(400)
+		margin: 37px 0 37px 100px
 	span
 		display: block
 		height: 4px

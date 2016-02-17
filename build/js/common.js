@@ -37,9 +37,12 @@ $(document).ready(function() {
 		}
 	});
 	$('.js-humb').on('click', function() {
-		$('.header__nav-mob').toggleClass('is-visible');
+		$('.mobile-nav').addClass('is-visible');
 	});
-	$('.btn-more, .header__nav-mob a, .header__nav a').on('click', function(e) {
+	$('.js-close').on('click', function() {
+		$('.mobile-nav').removeClass('is-visible');
+	});
+	$('.btn-more, .mobile-nav a, .header__nav a').on('click', function(e) {
 		e.preventDefault();
 		var section = $(this).attr('href');
 		$('html, body').animate({
