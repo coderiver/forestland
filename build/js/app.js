@@ -219,14 +219,14 @@ $(document).ready(function() {
 		slidesToShow: 3,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 800,
 				settings: {
 				slidesToShow: 2,
 				slidesToScroll: 1,
 				}
 			},
 			{
-				breakpoint: 500,
+				breakpoint: 550,
 				settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
@@ -288,14 +288,14 @@ $(document).ready(function() {
 			slidesToShow: 3,
 			responsive: [
 				{
-					breakpoint: 768,
+					breakpoint: 800,
 					settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
 					}
 				},
 				{
-					breakpoint: 500,
+					breakpoint: 550,
 					settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,

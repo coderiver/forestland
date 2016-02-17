@@ -176,8 +176,9 @@
 		+r(600)
 			font-size: 16px
 .layout
-	min-height: 700px
 	background-color: $green
+	+rm(1200)
+		min-height: 700px
 	.layout__in
 		padding: 42px 0 56px
 		margin: auto
@@ -224,10 +225,20 @@
 		list-style: none outside none
 		display: none
 		font-size: 0
+		+r(1330)
+			width: 88%
+			margin: auto
 		+r(1228)
 			padding: 0 25px
 		+r(1100)
 			padding: 0 10px
+			width: 92%
+		+r(800)
+			width: 90%
+		+r(600)
+			width: 88%
+		+r(550)
+			width: 75%
 		+r(500)
 			padding: 0
 		&.is-active
@@ -238,10 +249,6 @@
 	outline: 0
 	+r(1100)
 		padding: 0 10px
-	+r(500)
-		padding: 0 50px
-	+r(400)
-		padding: 0 20px
 	figcaption
 		margin-top: 33px
 	.room__pic

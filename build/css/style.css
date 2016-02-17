@@ -178,7 +178,7 @@ sub { vertical-align: bottom; }
 .odds .odds__name { font-family: "Cultbold Bold", sans-serif; font-size: 30px; color: #3e3e3e; margin-bottom: 20px; text-transform: uppercase; line-height: 1; }
 .odds .odds__text { font: 600 18px "Open Sans", sans-serif; max-width: 430px; margin: auto; color: #3e3e3e; line-height: 1.45; }
 
-.layout { min-height: 700px; background-color: #93c01f; }
+.layout { background-color: #93c01f; }
 .layout .layout__in { padding: 42px 0 56px; margin: auto; max-width: 1118px; }
 .layout .title { margin-bottom: 28px; }
 
@@ -397,8 +397,10 @@ sub { vertical-align: bottom; }
  .header__nav{ margin: 0 320px 0 250px; }
  .header__nav a{ font-size: 12px; } }
 @media only screen and (max-width: 1480px){
- .gallery.slick-slider .slick-prev, .gallery.slick-slider .slick-next{ display: none !important; }
- .slider-room .slick-prev, .slider-room .slick-next{ display: none !important; } }
+ .gallery.slick-slider .slick-prev, .gallery.slick-slider .slick-next{ display: none !important; } }
+@media only screen and (max-width: 1400px){
+ .slider-room .slick-prev{ border-width: 30px 30px 30px 0; }
+ .slider-room .slick-next{ border-width: 30px 0 30px 30px; } }
 @media only screen and (min-width: 1365px){
  .header .header__logo_big{ width: 252px; height: 252px; background-color: #93c01f; left: 3px; top: -57px; -webkit-border-radius: 50%; border-radius: 50%; z-index: 110; text-align: center; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
  .header .header__logo_big .logo{ font-size: 132px; margin-top: 67px; position: absolute; left: 0; right: 0; margin: 33px auto 0; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); } }
@@ -408,13 +410,17 @@ sub { vertical-align: bottom; }
  .header .btn-callback{ top: 44px; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); height: 50px; line-height: 44px; right: 18px; }
  .header__nav{ display: none; }
  .humb{ display: block; } }
+@media only screen and (max-width: 1330px){
+ .tabs .tabs__item{ width: 88%; margin: auto; } }
 @media only screen and (max-width: 1320px){
  .popup__in .btn-close{ right: 1%; } }
+@media only screen and (min-width: 1228px){
+ .tabs .tabs__list{ margin: 0 -25px; } }
 @media only screen and (max-width: 1228px){
  .tabs .tabs__controls{ margin: 0 0 40px; }
  .tabs .tabs__item{ padding: 0 25px; } }
-@media only screen and (min-width: 1228px){
- .tabs .tabs__list{ margin: 0 -25px; } }
+@media only screen and (min-width: 1200px){
+ .layout{ min-height: 700px; } }
 @media only screen and (max-width: 1200px){
  .header .header__tel{ top: 5px; }
  .header .header__tel .tel{ font-size: 30px; }
@@ -424,7 +430,7 @@ sub { vertical-align: bottom; }
 @media only screen and (max-width: 1147px){
  .header .header__logo{ left: 20px; } }
 @media only screen and (max-width: 1100px){
- .tabs .tabs__item{ padding: 0 10px; }
+ .tabs .tabs__item{ padding: 0 10px; width: 92%; }
  .room{ padding: 0 10px; } }
 @media only screen and (max-width: 1024px){
  .title{ font-size: 40px; }
@@ -460,6 +466,7 @@ sub { vertical-align: bottom; }
 @media only screen and (max-height: 800px){
  .top .btn-more{ bottom: 12.25%; } }
 @media only screen and (max-width: 800px){
+ .tabs .tabs__item{ width: 90%; }
  .popup .popup__block .btn-close{ right: 12px; } }
 @media only screen and (max-width: 768px){
  .title{ font-size: 36px; }
@@ -501,6 +508,7 @@ sub { vertical-align: bottom; }
  .odds .odds__pic{ height: auto; margin-bottom: 20px; }
  .odds .odds__name{ font-size: 22px; margin-bottom: 10px; }
  .odds .odds__text{ font-size: 16px; }
+ .tabs .tabs__item{ width: 88%; }
  .items .item .item__link{ width: 80%; }
  .items .item_left{ height: 200px; }
  .items .item_right{ height: 200px; }
@@ -518,11 +526,14 @@ sub { vertical-align: bottom; }
 @media only screen and (max-width: 560px){
  .footer .footer__col{ width: 100%; }
  .footer .footer__col.footer__col_centr{ text-align: left; } }
+@media only screen and (max-width: 550px){
+ .slider-room .slick-prev{ margin-right: 3%; }
+ .slider-room .slick-next{ margin-left: 3%; }
+ .tabs .tabs__item{ width: 75%; } }
 @media only screen and (max-width: 500px){
  .top .top__title{ font-size: 28px; }
  .top .btn-more{ width: 175px; font-size: 14px; }
  .tabs .tabs__item{ padding: 0; }
- .room{ padding: 0 50px; }
  .items .item .item__link{ width: 90%; height: 90px; }
  .items .title{ font-size: 24px; }
  .items span{ font-size: 16px; }
@@ -535,7 +546,6 @@ sub { vertical-align: bottom; }
 @media only screen and (max-width: 480px){
  .about .about__link{ font-size: 1.1em; } }
 @media only screen and (max-width: 400px){
- .room{ padding: 0 20px; }
  .humb{ margin: 37px 0 37px 100px; } }
 
 
