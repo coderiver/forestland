@@ -196,6 +196,28 @@ $(document).ready(function() {
 	var map;
 	function initMap() {
 
+		var customMapType = new google.maps.StyledMapType([
+			  {
+				stylers: [
+				  {hue: 'transparent'},
+				  {visibility: 'simplified'},
+				  {gamma: 0.7},
+				  {weight: 0.7}
+				]
+			  },
+			  {
+				elementType: 'labels',
+				stylers: [{visibility: 'on'}]
+			  },
+			  {
+				featureType: 'water',
+				stylers: [{color: '#81aefb'}]
+			  }
+			], {
+			  name: 'Custom Style'
+		  });
+		  var customMapTypeId = 'custom_style';
+
 		var myLatLng = {lat: 50.49836018, lng: 30.36530972};
 
 		var map = new google.maps.Map(document.getElementById('map'), {
@@ -207,8 +229,14 @@ $(document).ready(function() {
 			// streetViewControl: false,
 			scrollwheel: false,
 			// zoomControl : false,
+			mapTypeControlOptions: {
+				  mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+				},
 			
 		});
+
+		map.mapTypes.set(customMapTypeId, customMapType);
+		 map.setMapTypeId(customMapTypeId);
 
 		var marker = new google.maps.Marker({
 			position: {lat: 50.4656456, lng: 30.3667208},
