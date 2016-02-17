@@ -509,10 +509,10 @@ $(document).ready(function() {
 		});
 
 		var marker14 = new google.maps.Marker({
-			position: {lat: 50.5492584, lng: 30.1970628},
+			position: {lat: 50.553329, lng: 30.213514}, 
 			map: map,
 			title: 'Click to zoom!',
-			icon: 'img/marker-beaty.png'
+			icon: 'img/marker.png'
 		});
 
 		var marker15 = new google.maps.Marker({
