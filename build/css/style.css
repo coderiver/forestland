@@ -122,7 +122,6 @@ sub { vertical-align: bottom; }
 
 .btn-close { width: 37px; height: 37px; background: url(../img/btn-close.png) no-repeat center; background-color: #fff; cursor: pointer; z-index: 10; }
 .btn-close.is-mod { width: 15px; height: 16px; background: url(../img/btn-close.png) no-repeat center; }
-.btn-close.btn_genplan { position: fixed; right: 20px; top: 20px; }
 
 .title { font-family: "Cultbold Bold", sans-serif; text-transform: uppercase; font-size: 48px; color: #fff; text-align: center; letter-spacing: 0.1em; }
 .title.title_black { color: #3e3e3e; }
@@ -297,12 +296,12 @@ sub { vertical-align: bottom; }
 .header__nav a .nav__left, .header__nav a .nav__right { position: absolute; top: 50%; margin-top: -1.44444em; height: 2.88889em; background: url(../img/nav__left.png) no-repeat; left: -2.44444em; margin-left: 1.33333em; width: 2.44444em; display: none; z-index: -1; }
 .header__nav a .nav__right { left: auto; right: -2.44444em; margin-right: 1.22222em; background: url(../img/nav__right.png) no-repeat; }
 
-.mobile-nav { position: fixed; top: 0; bottom: 0; z-index: 999; right: -100%; background-color: #93c01f; -webkit-transition: all 0.6s ease; transition: all 0.6s ease; overflow-y: auto; padding: 50px 0; -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); }
-.mobile-nav.is-visible { right: 0; }
-.mobile-nav ul { width: 300px; }
+.mobile-nav { position: fixed; top: 0; bottom: 0; z-index: 999; left: -100%; background-color: #93c01f; -webkit-transition: all 0.6s ease; transition: all 0.6s ease; overflow-y: auto; padding: 50px 0; -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); }
+.mobile-nav.is-visible { left: 0; }
+.mobile-nav ul { width: 220px; }
 .mobile-nav li { text-align: center; border-left: 3px solid transparent; border-right: 3px solid transparent; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .mobile-nav li:focus, .mobile-nav li:hover { background-color: #82aa1b; border-left-color: #fff; border-right-color: #fff; }
-.mobile-nav li a { display: block; color: white; padding: 15px 10px; font-family: "Open Sans", sans-serif; font-size: 18px; font-weight: 600; text-transform: uppercase; line-height: 1.2; }
+.mobile-nav li a { display: block; color: white; padding: 10px; font-family: "Open Sans", sans-serif; font-size: 15px; font-weight: 600; text-transform: uppercase; line-height: 1.2; }
 .mobile-nav .btn-close { position: absolute; top: 7px; right: 15px; }
 
 .humb { display: none; position: relative; float: left; width: 30px; margin: 37px 0 37px 120px; padding: 11px 0; background: none; }
