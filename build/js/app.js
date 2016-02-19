@@ -408,8 +408,8 @@ $(document).ready(function() {
 				stylers: [
 				  {hue: 'transparent'},
 				  {visibility: 'simplified'},
-				  {gamma: 1.3},
-				  {weight: 2.7}
+				  {gamma: 0.3},
+				  {weight: 1.7}
 				]
 			  },
 			  {
