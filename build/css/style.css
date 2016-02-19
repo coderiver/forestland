@@ -122,6 +122,7 @@ sub { vertical-align: bottom; }
 
 .btn-close { width: 37px; height: 37px; background: url(../img/btn-close.png) no-repeat center; background-color: #fff; cursor: pointer; z-index: 10; }
 .btn-close.is-mod { width: 15px; height: 16px; background: url(../img/btn-close.png) no-repeat center; }
+.btn-close.btn_genplan { position: fixed; right: 20px; top: 20px; }
 
 .title { font-family: "Cultbold Bold", sans-serif; text-transform: uppercase; font-size: 48px; color: #fff; text-align: center; letter-spacing: 0.1em; }
 .title.title_black { color: #3e3e3e; }
@@ -359,6 +360,7 @@ sub { vertical-align: bottom; }
 .popup__pic { min-width: 1603px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; background: rgba(0, 0, 0, 0.8); }
 .popup__pic img { width: 100%; display: block; }
 .popup__pic .btn-close { display: block; position: absolute; right: 20px; top: 20px; }
+.popup__pic .btn-close.btn_genplan { position: fixed; }
 
 .send-form { width: 100%; max-width: 597px; margin: auto; background-color: white; position: relative; padding: 29px 32px 34px; *zoom: 1; }
 .send-form:after { content: " "; display: table; clear: both; }
@@ -419,19 +421,19 @@ sub { vertical-align: bottom; }
  .tabs .tabs__item{ width: 88%; margin: auto; } }
 @media only screen and (max-width: 1320px){
  .popup__in .btn-close{ right: 1%; } }
-@media only screen and (min-width: 1228px){
- .tabs .tabs__list{ margin: 0 -25px; } }
 @media only screen and (max-width: 1228px){
  .tabs .tabs__controls{ margin: 0 0 40px; }
  .tabs .tabs__item{ padding: 0 25px; } }
-@media only screen and (min-width: 1200px){
- .layout{ min-height: 700px; } }
+@media only screen and (min-width: 1228px){
+ .tabs .tabs__list{ margin: 0 -25px; } }
 @media only screen and (max-width: 1200px){
  .header .header__tel{ top: 5px; }
  .header .header__tel .tel{ font-size: 30px; }
  .header .btn-callback{ font-size: 16px; }
  .header .btn-callback span{ padding-right: 0; }
  .header .btn-callback i{ margin-right: 0; } }
+@media only screen and (min-width: 1200px){
+ .layout{ min-height: 700px; } }
 @media only screen and (max-width: 1147px){
  .header .header__logo{ left: 20px; } }
 @media only screen and (max-width: 1100px){
@@ -470,19 +472,20 @@ sub { vertical-align: bottom; }
  .header .header__tel .tel{ font-size: 24px; }
  .header .btn-callback{ font-size: 14px; }
  .send-form__btn{ width: 100%; float: none; } }
-@media only screen and (max-height: 800px){
- .top .btn-more{ bottom: 12.25%; } }
 @media only screen and (max-width: 800px){
  .tabs .tabs__item{ width: 90%; }
  .popup .popup__block .btn-close{ right: 12px; } }
+@media only screen and (max-height: 800px){
+ .top .btn-more{ bottom: 12.25%; } }
 @media only screen and (max-width: 768px){
  .title{ font-size: 36px; }
  .title .add-letter{ font-size: 57px; }
  .top .top__title{ background-color: #A31D5E; font: 40px/1.2 "Cultbold Bold", sans-serif; color: #f5d400; letter-spacing: 0.1em; position: relative; top: auto; left: auto; right: auto; padding: 10px 37px; }
  .top .top__title img{ display: none; }
  .top .btn-more{ height: 40px; line-height: 40px; width: 190px; font-size: 16px; }
- .complex .col1{ width: 100%; }
- .complex .col2{ display: none; }
+ .complex .col1{ width: 100%; margin-bottom: 20px; }
+ .complex .col2{ width: 100%; }
+ .complex .col2 img{ margin: auto; }
  .room .room__name{ font-size: 18px; }
  .room .room__sub{ font-size: 18px; }
  .items .item .item__link{ width: 70%; height: 100px; padding: 20px; }
@@ -554,8 +557,15 @@ sub { vertical-align: bottom; }
  .send-form{ padding: 25px 20px; } }
 @media only screen and (max-width: 480px){
  .about .about__link{ font-size: 1.1em; } }
+@media only screen and (max-width: 430px){
+ .bottom .run em{ font-size: 17px; }
+ .bottom .run .run__time{ font-size: 17px; } }
 @media only screen and (max-width: 400px){
  .humb{ margin: 37px 0 37px 100px; } }
+@media only screen and (max-width: 370px){
+ .bottom .run p{ font-size: 14px; }
+ .bottom .run em{ font-size: 14px; }
+ .bottom .run .run__time{ font-size: 14px; } }
 
 
 

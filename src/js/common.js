@@ -202,7 +202,7 @@ $(document).ready(function() {
 				  {hue: 'transparent'},
 				  {visibility: 'simplified'},
 				  {gamma: 1.3},
-				  {weight: 1.7}
+				  {weight: 2.7}
 				]
 			  },
 			  {
