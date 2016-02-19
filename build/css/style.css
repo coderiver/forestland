@@ -272,6 +272,8 @@ sub { vertical-align: bottom; }
 .bottom [class^="col"], .bottom [class*="col"] { display: inline-block; vertical-align: top; margin-bottom: 60px; }
 .bottom .col1 { width: 40%; padding-right: 4%; }
 .bottom .col2 { width: 60%; }
+.bottom .title { margin-top: -11px; }
+.bottom .title .add-letter { font-size: 71px; }
 .bottom .run { font-size: 0; }
 .bottom .run [class*="run__col"] { width: 50%; padding-right: 48px; margin-bottom: 0; }
 .bottom .run p { color: #646464; font: 600 18px "Open Sans", sans-serif; }
@@ -448,7 +450,9 @@ sub { vertical-align: bottom; }
  .room .room__name{ font-size: 20px; }
  .room .room__sub{ font-size: 20px; }
  .room__link{ font-size: 16px; }
- .transfer .transfer__container{ margin: 0 -20px; } }
+ .transfer .transfer__container{ margin: 0 -20px; }
+ .bottom .title{ margin-top: -7px; }
+ .bottom .title .add-letter{ font-size: 58px; } }
 @media only screen and (max-width: 960px){
  .transfer .transfer__in{ padding: 60px 20px 60px; }
  .transfer .title i{ display: none; }
@@ -463,6 +467,7 @@ sub { vertical-align: bottom; }
  .bottom .title_orange{ margin-bottom: 15px; }
  .bottom .col1{ width: 100%; }
  .bottom .col2{ width: 100%; }
+ .bottom .title{ margin-top: 0; }
  .bottom .run [class*="run__col"]{ padding-right: 0; width: 100%; margin-bottom: 20px; text-align: center; }
  .bottom .run em{ margin-bottom: 10px; }
  .bottom address{ max-width: 400px; text-align: left; margin: auto; }
@@ -530,6 +535,7 @@ sub { vertical-align: bottom; }
  .bottom .bottom__in{ padding: 40px 20px; }
  .bottom .title_black{ margin-bottom: 20px; }
  .bottom [class^="col"], .bottom [class*="col"]{ margin-bottom: 40px; }
+ .bottom .title .add-letter{ font-size: 43px; }
  .bottom .run p{ font-size: 16px; }
  .bottom .run em{ font-size: 20px; }
  .bottom address{ font-size: 20px; }
