@@ -201,8 +201,9 @@ $(document).ready(function() {
 				stylers: [
 				  {hue: 'transparent'},
 				  {visibility: 'simplified'},
-				  {gamma: 0.3},
-				  {weight: 1.7}
+				  {gamma: 0.2},
+				  {weight: 1.7},
+				  {lightness: 20}
 				]
 			  },
 			  {
