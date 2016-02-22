@@ -331,7 +331,6 @@
 		right: -1.8888888888888888em // 34px / 18px
 		background: url(../img/room_link-r.png) no-repeat
 		background-size: contain
-
 .items
 	position: relative
 	font-size: 0
@@ -342,79 +341,82 @@
 		text-align: center
 		position: relative
 		overflow: hidden
-		+r(1365)
+		height: 300px
+		+vertical
+		+r(1000)
 			width: 100%
-		.item__link
-			width: 648px
-			height: 192px
-			margin: auto
-			background-size: contain !important
-			display: block
+		+r(500)
+			height: auto
+		&.item_left
+			&:hover
+				.item__bg
+					transform: scale(1.15)
+			.item__link
+				&:hover
+					&:after
+						opacity: 1
+				&:before
+					background: url(../img/item__link-left.png) no-repeat center
+					background-size: contain
+				&:after
+					background: url(../img/item__link-left-h.png) no-repeat center
+					background-size: contain
+					opacity: 0
+					+tr(all 0.3s ease)
+			.item__bg
+				background: url(../img/item-left.jpg) no-repeat center
+				background-size: cover
+		&.item_right
+			background: url(../img/item-right.jpg) no-repeat center
+			background-size: cover
+			&:hover
+				.item__bg
+					transform: scale(1.15)
+			.item__link
+				&:hover
+					&:after
+						opacity: 1
+				&:before
+					background: url(../img/item__link-right.png) no-repeat center
+					background-size: contain
+				&:after
+					background: url(../img/item__link-right-h.png) no-repeat center
+					background-size: contain
+					opacity: 0
+					+tr(all 0.3s ease)
+			.item__bg
+				background: url(../img/item-right.jpg) no-repeat center
+				background-size: cover
+		.item__bg
 			position: absolute
-			left: 0
+			top: 0
 			right: 0
+			bottom: 0
+			left: 0
+			+tr(all 0.3s ease-in-out)
+	.item__link
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		z-index: 1
+		max-width: 648px
+		width: 100%
+		height: 192px
+		&:before, &:after
+			content: ' '
+			position: absolute
+			display: block
+			z-index: -1
 			top: 0
 			bottom: 0
-			z-index: 1
-			+tr(transform 0.4s ease)
-			+r(768)
-				width: 70%
-				height: 100px
-				padding: 20px
-			+r(600)
-				width: 80%
-			+r(500)
-				width: 90%
-				height: 90px
-	.item_left
-		background: url(../img/item-left.jpg) no-repeat center
-		background-size: cover
-		height: 300px
-		+tr(all 0.4s ease)
-		&:hover
-			+scale(1.07)
-			.item__link
-				+scale(0.93)
-		+r(768)
-			height: 250px
-		+r(600)
-			height: 200px
-		.item__link
-			background: url(../img/item__link-left.png) no-repeat
-			+r(768)
-				background: #009BDD
-			&:hover
-				background: url(../img/item__link-left-h.png) no-repeat
-				+r(768)
-					background: #F28F1D
-	.item_right
-		background: url(../img/item-right.jpg) no-repeat center
-		background-size: cover
-		height: 300px
-		+tr(all 0.4s ease)
-		&:hover
-			+scale(1.07)
-			.item__link
-				+scale(0.93)
-		+r(768)
-			height: 250px
-		+r(600)
-			height: 200px
-		.item__link
-			background: url(../img/item__link-right.png) no-repeat
-			+r(768)
-				background: #009BDD
-			&:hover
-				background: url(../img/item__link-right-h.png) no-repeat
-				+r(768)
-					background: #F28F1D
+			left: 0
+			right: 0
 	.title
 		line-height: 1
 		margin: 55px 0 7px
-		+r(768)
-			margin: 0 auto 5px
 		+r(500)
 			font-size: 24px
+			margin-top: 70px
 	span
 		font: 400 24px "Open Sans", sans-serif
 		color: #fff
@@ -425,7 +427,6 @@
 			font-size: 20px
 		+r(500)
 			font-size: 16px
-
 .about
 	background-color: #FFF
 	min-height: 560px
@@ -680,7 +681,6 @@
 				font-size: 17px
 			+r(370)
 				font-size: 14px
-
 	address
 		color: #636363
 		font: normal 24px/36px "Open Sans", sans-serif
