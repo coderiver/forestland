@@ -41,6 +41,34 @@
 		width: 27%
 		+r(650)
 			display: none
+	&.popup_flat
+		background-color: transparent
+		z-index: 100
+		.popup__in
+			max-width: 1640px
+			margin: auto
+			padding: 100px 20px 0
+			display: block
+			overflow: hidden
+			+r(900)
+				padding: 100px 0 0
+		.flat__col1,
+		.flat__col2
+			vertical-align: top
+		.btn-close
+			top: 140px
+			right: 47px
+			+tr(background-color .2s ease-in-out)
+			&:hover
+				background-color: #A11B5D
+		+r(1024)
+			.flat__col1
+				display: block
+				margin: auto
+			.flat__col2
+				display: block
+				width: 100%
+				padding: 40px 0
 	[class*="col"], [class^="col"]
 		display: inline-block
 		vertical-align: middle
